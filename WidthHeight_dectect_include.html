@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with ScrollSpy</title>
+
+    <!-- Bootstrap5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Slick CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="path/to/bootstrap.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="path/to/slick.css">
+    <!-- Optional Slick theme -->
+    <link rel="stylesheet" href="path/to/slick-theme.css">
+    <!-- Custom CSS -->
+
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .mobile-content, .desktop-slider{
+            position: fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            z-index: -999;
+        }
+
+        .mobile-content img, .desktop-slider img{
+            min-height:100%;
+            min-width: 100%;
+            width:100%;
+            margin-bottom:-10px;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="d-none d-md-block ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <!-- desktop test -->
+                    <!-- Slick slider for desktop -->
+                    <div class="desktop-slider">
+                        <!-- Slide items -->
+                        <img id="dynamicImage" src="" alt="north">
+                    </div>
+                    <!-- Navigation for desktop (placed at the bottom of the screen) -->
+                    <nav class="navbar fixed-bottom navbar-light bg-light">
+                        <ul class="nav">
+                            <!-- Nav items linked to slides -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-md-none ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <!-- Content for mobile -->
+                    <div class="mobile-content">
+                        <!-- Content sections -->
+                        <img id="dynamicImage2" src="" alt="north">
+                    </div>
+                    <!-- Navigation for mobile (fixed at the bottom) -->
+                    <nav class="navbar fixed-bottom navbar-light bg-light">
+                        <ul class="nav">
+                            <!-- Nav items linked to content sections -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+
+    <!-- Bootstrap and Slick JS -->
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/bootstrap.bundle.min.js"></script>
+    <script src="path/to/slick.min.js"></script>
+
+
+
+</body>
+
+</html>
+
+<script>
+    // 獲取視窗的寬度和高度
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    // 獲取圖片元素
+    var img = document.getElementById('dynamicImage');
+    var img2 = document.getElementById('dynamicImage2');
+
+    // 建構圖片的URL，並動態地替換x和y值
+    img.src = 'https://picsum.photos/id/20/' + width + '/' + height;
+    img2.src = 'https://picsum.photos/id/201/' + width + '/' + height;
+
+    // 可選：如果需要在控制台查看生成的URL
+    console.log(img.src);
+</script>
+
+
+<!-- 滿版設定說明 https://www.astralweb.com.tw/full-screen-backround-image/ -->
