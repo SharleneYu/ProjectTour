@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Scrollspy with Slick and Bootstrap</title>
+    <!-- 引入Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+<!-- 中大裝置scrollspy的設定 -->
+    <style>
+      .slick-slide {
+          outline: none;
+      }
+      .image-container {
+          height: 100vh;
+          color: #fff;
+          background-position: center center;
+          background-size: cover;
+      }
+      #navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 100;
+          background: rgba(0,0,0,0.7);
+      }
+      #navbar ul {
+          list-style: none;
+          display: flex;
+          padding-left: 0;
+      }
+      #navbar ul li a {
+          color: #fff;
+          padding: 10px;
+          display: block;
+      }
+      #navbar ul li.active a {
+          background: #007bff;
+      }
+  </style>
+  <!-- 中大裝置scrollspy的設定 -->
+
+</head>
+<body>
+
+<!-- 實際的HTML結構依你的需求設計 -->
+<nav id="navbar">
+  <ul>
+      <li class="active"><a href="#img1">Image 1</a></li>
+      <li><a href="#img2">Image 2</a></li>
+      <li><a href="#img3">Image 3</a></li>
+  </ul>
+</nav>
+
+<div class="slider">
+  <div class="image-container" ID="img1" >1</div>
+  <div class="image-container" ID="img2" >2</div>
+  <div class="image-container" ID="img3" >3</div>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Slick Carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.slider').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      vertical: false,
+      dots: false,
+      arrows: false,
+  });
+
+  $('.slider').on('wheel', (function(e) {
+      e.preventDefault();
+      if (e.originalEvent.deltaY < 0) {
+          $(this).slick('slickPrev');
+      } else {
+          $(this).slick('slickNext');
+      }
+  }));
+
+  // Update navigation on slide
+  $('.slider').on('afterChange', function(event, slick, currentSlide){
+      $('#navbar ul li').removeClass('active');
+      $('#navbar ul li').eq(currentSlide).addClass('active');
+  });
+});
+</script>
+
+<!-- 對於小型裝置的內容 -->
+<div class="d-md-none">
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+              <a class="nav-link" href="#content1">Item 1</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#content2">Item 2</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#content3">Item 3</a>
+          </li>
+      </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example">
+      <h4 id="content1">Content 1</h4>
+      <p>More content...</p>
+      <h4 id="content2">Content 2</h4>
+      <p>More content...</p>
+      <h4 id="content3">Content 3</h4>
+      <p>More content...</p>
+  </div>
+</div>
+<!-- 實際的HTML結構依你的需求設計 -->
+
+
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Slick Carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+<script>
+  $(document).ready(function(){
+      // Slick Slider Initialization for large devices
+      $('.your-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: false,
+          cssEase: 'linear'
+      });
+  
+      // Custom wheel event for sliding on large devices
+      $('.your-slider').on('wheel', (function(e) {
+          e.preventDefault();
+  
+          if (e.originalEvent.deltaY < 0) {
+              $(this).slick('slickPrev');
+          } else {
+              $(this).slick('slickNext');
+          }
+      }));
+      
+      // Initialize Bootstrap ScrollSpy for small devices
+      if ($(window).width() < 768) {
+          $('body').scrollspy({ target: '#navbar-example2' });
+      }
+  });
+  </script>
+  </body>
+  </html>
