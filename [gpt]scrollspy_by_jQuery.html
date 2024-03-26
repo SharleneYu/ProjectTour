@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollspy without Bootstrap</title>
+    <style>
+        .section { height: 805px; }
+        .active { background-color: bisque; color: red;}
+    </style>
+</head>
+<body>
+
+<nav style="position:fixed">
+    <ul style="list-style-type: none;">
+        <li><a href="#northern">Northern</a></li>
+        <li><a href="#central">Central</a></li>
+        <li><a href="#southern">Southern</a></li>
+        <li><a href="#eastern">Eastern</a></li>
+        <li><a href="#islands">Islands</a></li>
+    </ul>
+</nav>
+
+
+<div id="northern" class="section" style="background-image: url(https://via.placeholder.com/300x800?text=home);background-repeat:no-repeat; border: 2px solid red"></div>
+<div id="northern" class="section" style="background-image: url(https://via.placeholder.com/300x800?text=northern);background-repeat:no-repeat; border: 2px solid blue"></div>
+<div id="central" class="section" style="background-image: url(https://via.placeholder.com/300x800?text=central);background-repeat:no-repeat; border: 2px solid orange"></div>
+<div id="southern" class="section" style="background-image: url(https://via.placeholder.com/300x800?text=southern);background-repeat:no-repeat; border: 2px solid black"></div>
+<div id="eastern" class="section" style="background-image: url(https://via.placeholder.com/300x800?text=eastern);background-repeat:no-repeat; border: 2px solid greenyellow"></div>
+<div id="islands" class="section" style="background-image: url(https://via.placeholder.com/300x800?text=islands);background-repeat:no-repeat; border: 2px solid violet"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
+
+<script>
+
+// 當文檔加載完成後，執行內部的函數
+$(document).ready(function() {
+    // 監聽滾動事件
+    $(window).scroll(function() {
+        // 遍歷所有的導航連結
+        $('nav ul li a').each(function() {
+            var currLink = $(this); // 獲取當前遍歷到的導航連結
+            var refElement = $(currLink.attr("href")); // 透過導航連結的href屬性值，獲取對應的section元素
+
+            // 判斷當前滾動位置是否在這個section的範圍內
+            if (refElement.position().top <= $(window).scrollTop() && refElement.position().top + refElement.height() > $(window).scrollTop()) {
+                // 如果是，在所有導航連結上移除active類，然後只在當前導航連結上添加active類
+                $('nav ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                // 如果不是，則從當前導航連結上移除active類
+                currLink.removeClass("active");
+            }
+        });
+    });
+});
+
+</script>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSD2html_PC_0316</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Custom Styles -->
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: url(./final_images_partial/pc/0all/bg.png);
+        }
+
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+        }
+
+        .slider {
+            padding: 0;
+            margin: 0;
+            height: 75vh;
+            width: 100vw;
+            /* border: 1px dashed blue */
+        }
+
+        /* .slick-slide {
+             height: 100vh;
+             color: white;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 48px;
+         } */
+
+        .slider-container {
+            height: 75vh;
+            width: 100vw;
+            background-image: url(./final_images_partial/pc/0all/bg.png);
+
+        }
+
+        .slider-row {
+            height: 45%;
+            /* margin: auto; */
+            /* padding-top:5%; */
+        }
+
+        .nav-link.active {
+            border-radius: 10%;
+            font-weight: bold;
+            background-color: rgb(223, 189, 144);
+        }
+
+        .navbar {
+            height: 25vh;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            justify-content: center;
+            background-image: url(./final_images_partial/pc/0all/bg.png);
+            background-repeat: repeat;
+        }
+
+        .slideDown {
+            height: 87%;
+            width: 100vw;
+        }
+
+        .mb-nav {
+            height: 13%;
+            width: 100vw;
+            background-image: url(./final_images_partial/pc/0all/bg.png);
+        }
+
+        .mb_columns {
+            width: 50vw;
+        }
+
+        .mb-col {
+            width: 40 vw;
+            height: 40vw;
+
+        }
+
+        .road {
+            background-image: url(./final_images_partial/pc/0all/road.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Desktop: Hidden only on sm -->
+    <div class="d-none d-md-block container-fluid">
+
+        <div class="slider">
+            <!-- Desktop: departure -->
+            <div class="slider-container" id="departure"
+                style="background-image: url(./final_images_partial/pc/1departure/foodTour_pc_main.png); background-repeat: no-repeat; background-position: center;">
+                <!-- <img src="./final_images_partial/pc/1departure/foodTour_pc_main.png" alt="departure" style="height:95%; margin:auto"> -->
+            </div>
+
+            <!-- Desktop: northern -->
+            <div class="slider-container " id="northern" style="background-image: url(./final_images_partial/pc/2nothern/twn_1northern_dots.png); background-repeat: no-repeat; background-position: center;">
+                <div class="slider-row d-flex mt-3 mb-3">
+                    <div class="col-2">
+                        <img src="./final_images_partial/pc/2nothern/twn_1nothern_0.png" alt="香魚故鄉" style="width:100%">
+                    </div>
+                    <div class="col-9">
+                        <img src="./final_images_partial/pc/2nothern/twn_1northern_1.png" alt="都美味" style="height:100%">
+                    </div>
+                    <div class="col-1">
+                    </div>
+
+                </div>
+<!-- 
+                <div class="slider-row d-flex mt-5">
+
+                </div> -->
+
+                <div class="slider-row d-flex mt-5">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-3">
+                        <img src="./final_images_partial//pc/2nothern/twn_1northern_2.png" alt="宜蘭西魯肉"  style="width:100%; padding-top:10px">
+                    </div>
+                    <div class="col-3">
+                        <img src="./final_images_partial//pc/2nothern/twn_1northern_3.png" alt="復興蔬果"  style="width:100%; padding-top:10px">
+                    </div>
+                    <div class="col-3">
+                        <img src="./final_images_partial//pc/2nothern/twn_1northern_4.png" alt="基隆甜不辣"  style="width:100%; padding-top:10px">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Desktop: central -->
+            <div class="slider-container" id="central">
+                <div class="slider-row d-flex mt-3 mb-3">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品１這是推品１這是推品１這是推品１</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品２這是推品２這是推品２這是推品２</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品３這是推品３這是推品３這是推品３</p>
+                    </div>
+                </div>
+                <div class="slider-row d-flex mt-5">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-1 pb-3">
+                        <img src="./mockup_images/食光旅行季20240305_中台灣標頭.png" alt="central" style="height:85%">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品４這是推品４這是推品４這是推品４</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品５這是推品５這是推品５這是推品５</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop: southern -->
+            <div class="slider-container" id="southern">
+
+                <div class="slider-row d-flex mt-3 mb-3">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品１這是推品１這是推品１這是推品１</p>
+                    </div>
+
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品２這是推品２這是推品２這是推品２</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品３這是推品３這是推品３這是推品３</p>
+                    </div>
+                    <div class="col-1">
+                        <img src="./mockup_images/食光旅行季20240305_南台灣標頭.png" alt="southern" style="height:100%">
+                    </div>
+                </div>
+                <div class="slider-row d-flex mt-5">
+                    <div class="col-2"></div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品４這是推品４這是推品４這是推品４</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品５這是推品５這是推品５這是推品５</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品６這是推品６這是推品６這是推品６</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Desktop: eastern -->
+            <div class="slider-container" id="eastern">
+                <div class="slider-row d-flex mt-3 mb-3">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品１" style="height:85%">
+                        <p class="px-5">這是推品１這是推品１這是推品１這是推品１</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品２這是推品２這是推品２這是推品２</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品３" style="height:85%">
+                        <p class="px-5">這是推品３這是推品３這是推品３這是推品３</p>
+                    </div>
+                </div>
+                <div class="slider-row d-flex mt-5">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品４" style="height:85%">
+                        <p class="px-5">這是推品４這是推品４這是推品４這是推品４</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品５" style="height:85%">
+                        <p class="px-5">這是推品５這是推品５這是推品５這是推品５</p>
+                    </div>
+                    <div class="col-1 pb-3">
+                        <img src="./mockup_images/食光旅行季20240305_花東標頭.png" alt="central" style="height:100%">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop: islands -->
+            <div class="slider-container" id="islands">
+
+                <div class="slider-row d-flex mt-3 mb-3">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-1 pb-3">
+                        <img src="./mockup_images/食光旅行季20240305_離島標頭.png" alt="central" style="height:100%">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品２" style="height:85%">
+                        <p class="px-5">這是推品２這是推品２這是推品２這是推品２</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品３" style="height:85%">
+                        <p class="px-5">這是推品３這是推品３這是推品３這是推品３</p>
+                    </div>
+                </div>
+                <div class="slider-row d-flex mt-5">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品４" style="height:85%">
+                        <p class="px-5">這是推品４這是推品４這是推品４這是推品４</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品５" style="height:85%">
+                        <p class="px-5">這是推品５這是推品５這是推品５這是推品５</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品５" style="height:85%">
+                        <p class="px-5">這是推品５這是推品５這是推品５這是推品５</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light road">
+            <ul class="navbar-nav d-flex flex-row ">
+                <!-- <li class="nav-item px-3 "> <a class="nav-link" href="#departure">起 點</a> </li> -->
+                <li class="nav-item px-3 "> <a class="nav-link" href="#northern"><img
+                            src="./final_images_partial/pc/0all/tag1nothern.png" alt="northern"
+                            style="width:100%; margin:auto"></a> </li>
+                <li class="nav-item px-3 "> <a class="nav-link" href="#central"><img
+                            src="./final_images_partial/pc/0all/tag2central.png" alt="central"
+                            style="width:100%; margin:auto"></a> </li>
+                <li class="nav-item px-3 "> <a class="nav-link" href="#southern"><img
+                            src="./final_images_partial/pc/0all/tag3southern.png" alt="southern"
+                            style="width:100%; margin:auto"></a> </li>
+                <li class="nav-item px-3 "> <a class="nav-link" href="#eastern"><img
+                            src="./final_images_partial/pc/0all/tag_4eastern.png" alt="eastern"
+                            style="width:100%; margin:auto"></a> </li>
+                <li class="nav-item px-3 "> <a class="nav-link" href="#islands"><img
+                            src="./final_images_partial/pc/0all/tag_5islands.png" alt="islands"
+                            style="width:100%;margin:auto;"></a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile: Hidden only on md-->
+    <div class="d-md-none text-dark">
+        <div class="header-container fixed-top bg-waning"
+            style="background-image: url(./final_images_partial/mb/0all/bg.png);">
+            <img src="./" alt="header" style="width:100%; padding: 10px;">
+        </div>
+
+        <div class="slideDown">
+
+            <div class="region" id="departure"
+                style=" width: 100vw; height: 100vh; background-image: url(https://picsum.photos/id/20/500/800);">
+                <div style="padding-top: 380px; font-weight:bolder; text-align:center; font-size: 20px; color: brown">
+                    這是第一屏</div>
+            </div>
+
+            <!-- Mobile: northern -->
+            <div class="region" id="northern">
+                <div class="container-fluid ">
+                    <!-- <img src="./mockup_images/食光旅行季20240305_首頁主圖.png" alt="header" style="width:100%; padding: 10px;"> -->
+                    <div class="bg-secondary py-2 text-white text-center">Northern Taiwan</div>
+                </div>
+                <div class="container-fluid d-flex mt-3 ">
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="width:90%;">
+                            <p class="px-1">這是推品１這是推品１這是推品１這是推品１</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="width:90%;">
+                            <p class="px-1">這是推品２這是推品２這是推品２這是推品２</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品３" style="width:90%;">
+                            <p class="px-1">這是推品３這是推品３這是推品３這是推品３</p>
+                        </div>
+                    </div>
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品４" style="width:90%;">
+                            <p class="px-1">這是推品４這是推品４這是推品４這是推品４</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品５" style="width:90%;">
+                            <p class="px-1">這是推品５這是推品５這是推品５這是推品５</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品６" style="width:90%;">
+                            <p class="px-1">這是推品６這是推品６這是推品６這是推品６</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile: central -->
+            <div class="region" id="central">
+
+                <div class="container-fluid my-2">
+                    <!-- <img src="./mockup_images/食光旅行季20240305_首頁主圖.png" alt="header" style="width:100%; padding: 10px;"> -->
+                    <div class="bg-secondary py-2 text-white text-center">Central Taiwan</div>
+                </div>
+                <div class="container-fluid d-flex mt-3 ">
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品１" style="width:90%;">
+                            <p class="px-1">這是推品１這是推品１這是推品１這是推品１</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品２" style="width:90%;">
+                            <p class="px-1">這是推品２這是推品２這是推品２這是推品２</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品３" style="width:90%;">
+                            <p class="px-1">這是推品３這是推品３這是推品３這是推品３</p>
+                        </div>
+                    </div>
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品４" style="width:90%;">
+                            <p class="px-1">這是推品４這是推品４這是推品４這是推品４</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品５" style="width:90%;">
+                            <p class="px-1">這是推品５這是推品５這是推品５這是推品５</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-西魯肉.png" alt="這是推品６" style="width:90%;">
+                            <p class="px-1">這是推品６這是推品６這是推品６這是推品６</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile: southern -->
+            <div class="region" id="southern">
+
+                <div class="container-fluid my-2">
+                    <!-- <img src="./mockup_images/食光旅行季20240305_首頁主圖.png" alt="header" style="width:100%; padding: 10px;"> -->
+                    <div class="bg-secondary py-2 text-white text-center">Southern Taiwan</div>
+                </div>
+                <div class="container-fluid d-flex mt-3 ">
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品１" style="width:90%;">
+                            <p class="px-1">這是推品１這是推品１這是推品１這是推品１</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品２" style="width:90%;">
+                            <p class="px-1">這是推品２這是推品２這是推品２這是推品２</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品３" style="width:90%;">
+                            <p class="px-1">這是推品３這是推品３這是推品３這是推品３</p>
+                        </div>
+                    </div>
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品４" style="width:90%;">
+                            <p class="px-1">這是推品４這是推品４這是推品４這是推品４</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品５" style="width:90%;">
+                            <p class="px-1">這是推品５這是推品５這是推品５這是推品５</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-番茄.png" alt="這是推品６" style="width:90%;">
+                            <p class="px-1">這是推品６這是推品６這是推品６這是推品６</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile: eastern -->
+            <div class="region" id="eastern">
+
+                <div class="container-fluid my-2">
+                    <!-- <img src="./mockup_images/食光旅行季20240305_首頁主圖.png" alt="header" style="width:100%; padding: 10px;"> -->
+                    <div class="bg-secondary py-2 text-white text-center">Eastern Taiwan</div>
+                </div>
+                <div class="container-fluid d-flex mt-3 ">
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品１" style="width:90%;">
+                            <p class="px-1">這是推品１這是推品１這是推品１這是推品１</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品２" style="width:90%;">
+                            <p class="px-1">這是推品２這是推品２這是推品２這是推品２</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品３" style="width:90%;">
+                            <p class="px-1">這是推品３這是推品３這是推品３這是推品３</p>
+                        </div>
+                    </div>
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品４" style="width:90%;">
+                            <p class="px-1">這是推品４這是推品４這是推品４這是推品４</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品５" style="width:90%;">
+                            <p class="px-1">這是推品５這是推品５這是推品５這是推品５</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品６" style="width:90%;">
+                            <p class="px-1">這是推品６這是推品６這是推品６這是推品６</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile: islands -->
+            <div class="region" id="islands">
+                <div class="container-fluid my-2">
+                    <!-- <img src="./mockup_images/食光旅行季20240305_首頁主圖.png" alt="header" style="width:100%; padding: 10px;"> -->
+                    <div class="bg-secondary py-2 text-white text-center">Near Islands</div>
+                </div>
+                <div class="container-fluid d-flex mt-3 ">
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品１" style="width:90%;">
+                            <p class="px-1">這是推品１這是推品１這是推品１這是推品１</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品２" style="width:90%;">
+                            <p class="px-1">這是推品２這是推品２這是推品２這是推品２</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品３" style="width:90%;">
+                            <p class="px-1">這是推品３這是推品３這是推品３這是推品３</p>
+                        </div>
+                    </div>
+                    <div class="row flex-column mb_columns mx-0 px-0">
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品４" style="width:90%;">
+                            <p class="px-1">這是推品４這是推品４這是推品４這是推品４</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品５" style="width:90%;">
+                            <p class="px-1">這是推品５這是推品５這是推品５這是推品５</p>
+                        </div>
+                        <div class="col mb-col">
+                            <img src="./mockup_images/食光旅行季20240305_北台灣-香魚.png" alt="這是推品６" style="width:90%;">
+                            <p class="px-1">這是推品６這是推品６這是推品６這是推品６</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav fixed-bottom bg-secondary-subtle mb-nav">
+            <!-- navbar navbar-expand-lg navbar-light bg-light -->
+            <ul class=" d-flex flex-row list-unstyled m-auto road">
+                <!-- navbar-na -->
+                <!-- <li class="nav-item py-3 px-1 "> 
+                    <a class="nav-link" href="#departure">
+                        YOHO
+                    </a>
+                </li> -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="#northern">
+                        <img src="./final_images_partial/mb/0all/tag_1northern.png" alt="northern" style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#central">
+                        <img src="./final_images_partial/mb/0all/tag_2central.png" alt="central" style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#southern">
+                        <img src="./final_images_partial/mb/0all/tag_3southern.png" alt="southern" style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#eastern">
+                        <img src="./final_images_partial/mb/0all/tag_4eastern.png" alt="eastern" style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#islands">
+                        <img src="./final_images_partial/mb/0all/tag_5islands.png" alt="islands" style="width:100%;">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</body>
+
+</html>
+
+<script>
+
+    // 獲取視窗的寬度和高度
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    // 在控制台console log中輸出尺寸
+    console.log('Width: ' + width + ', Height: ' + height);
+
+
+
+    //設定slick的.slider事件，連動nav監測
+    $(document).ready(function () {
+        $('.slider').slick({
+            vertical: false, // Set to true if you want vertical slider
+            dots: false,
+            infinite: false,
+            initialSlide: 1,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            arrows: false, // Hide default arrows
+        });
+
+        // Update Scrollspy based on slide change
+        $('.slider').on('afterChange', function (event, slick, currentSlide) {
+            let currentSection = $('.region')[currentSlide].id;
+            $('a.nav-link').removeClass('active');
+            $('a[href="#' + currentSection + '"]').addClass('active');
+        });
+
+        // SYU::測試NAV換成車圖
+        document.addEventListener('DOMContentLoaded', function () {
+            // 檢查是否有元素具有 'nav-link' 和 'active' 類別
+            var activeLink = document.querySelector('.nav-link.active');
+            if (activeLink) {
+                // 找到該元素下的 <img>
+                var img = activeLink.querySelector('img');
+                if (img) {
+                    // 更新 <img> 的 src 和 alt 屬性
+                    img.src = "../themes/lativ/activity/images/foodTour/食光旅行季20240305_移動選單-車子.png";
+                    img.alt = ""; // 更新為需要的 alt 文字，這裡留空了
+                }
+            }
+        });
+        // SYU::測試NAV換成車圖
+
+        // Navigate to slide on nav click
+        $('a.nav-link').click(function (e) {
+            e.preventDefault();
+            let targetSlide = $(this).attr('href').substring(1); // Remove '#'
+            let slideIndex = $('.region').index($('#' + targetSlide));
+            $('.slider').slick('slickGoTo', slideIndex);
+        });
+
+        // Custom navigation logic for desktop
+        $(document).on('wheel', function (e) {
+            if (e.originalEvent.deltaY > 0) {
+                $('.slider').slick('slickNext');
+            } else {
+                $('.slider').slick('slickPrev');
+            }
+        });
+    });
+</script>
