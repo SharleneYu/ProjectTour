@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovingBall</title>
+
+    <style>
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .car {
+            position: absolute;
+            /* width: 50px;
+            height: 50px; */
+            
+            /* background-image: url(./final_images_partial/mb/0all/car.png); */
+            border-radius: 50%;
+            transition: all 0.8s ease;
+            /* 讓移動有動畫效果 */
+        }
+
+        #circle1 {
+            top: 300px;
+            left: 350px;
+        }
+
+        #circle2 {
+            top: 300px;
+            left: 600px;
+        }
+
+        #circle3 {
+            top: 300px;
+            left: 850px;
+        }
+
+        #circle4 {
+            top: 300px;
+            left: 1100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="car" id="car" style="top: 300px; left: 0px;"></div>
+
+    <div class="circle" id="circle1" style="text-align:center;">Departure</div>
+    <div class="circle" id="circle2" style="text-align:center;">StopA</div>
+    <div class="circle" id="circle3" style="text-align:center;">StopB</div>
+    <div class="circle" id="circle4" style="text-align:center;">StopC</div>
+
+</body>
+
+</html>
+
+<script>
+    const car = document.getElementById('car');
+    const circle1 = document.getElementById('circle1');
+    const circle2 = document.getElementById('circle2');
+    const circle3 = document.getElementById('circle3');
+
+    circle1.addEventListener('click', () => {
+        moveCar(circle1);
+    });
+
+    circle2.addEventListener('click', () => {
+        moveCar(circle2);
+    });
+
+    circle3.addEventListener('click', () => {
+        moveCar(circle3);
+    });
+
+    circle4.addEventListener('click', () => {
+        moveCar(circle4);
+    });
+    function moveCar(circle) {
+        const circleRect = circle.getBoundingClientRect();
+        const carRect = car.getBoundingClientRect();
+
+        const offsetX = circleRect.left + circleRect.width / 2 - carRect.width / 2;
+        const offsetY = circleRect.top + circleRect.height / 2 - carRect.height / 2;
+
+        car.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    }
+</script>
+
+
+<!-- 
+
+    https://codepen.io/Coding_Snorlax/pen/ZEZWxdZ
+
+ -->

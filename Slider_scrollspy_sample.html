@@ -89,11 +89,27 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <ul class="navbar-nav d-flex flex-row ">
-                <li class="nav-item px-3 "> <a class="nav-link" href="#north">北台灣</a> </li>
-                <li class="nav-item px-3 "> <a class="nav-link" href="#center">中台灣</a> </li>
-                <li class="nav-item px-3 "> <a class="nav-link" href="#south">南台灣</a> </li>
-                <li class="nav-item px-3 "> <a class="nav-link" href="#east">花  東</a> </li>
-                <li class="nav-item px-3 "> <a class="nav-link" href="#islands">離  島</a> </li>
+                <li class="nav-item px-3 ">
+                    <a class="nav-link text-center" href="#north">
+                        <p>北台灣</p>
+                    </a> 
+                </li>
+                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#center">
+                    <p>中台灣</p>
+                <p></p>
+            </a> </li>
+                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#south">
+                    <p>南台灣</p>
+                <p></p>
+            </a> </li>
+                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#east">
+                    <p>花  東</p>
+                <p></p>
+            </a> </li>
+                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#islands">
+                    <p>離  島</p>
+                <p></p>
+            </a> </li>
             </ul>
         </nav>
     </div>
@@ -165,8 +181,9 @@
         // Update Scrollspy based on slide change
         $('.slider').on('afterChange', function (event, slick, currentSlide) {
             let currentSection = $('.region')[currentSlide].id;
-            $('a.nav-link').removeClass('active');
-            $('a[href="#' + currentSection + '"]').addClass('active');
+            $('a.nav-link').removeClass('active').find('p.img-wrapper').remove();
+            let activeNavLink = $('a[href="#' +currentSection + '"]').addClass('active');
+            activeNavLink.append('<p class="img-wrapper"><img src="./final_images_partial/mb/0all/car.png" alt="" style="width:90%"></p>');
         });
 
         // Navigate to slide on nav click
