@@ -52,6 +52,7 @@
         .nav-link.active {
             font-weight: bold;
             background-color: gold;
+
         }
 
         .navbar {
@@ -88,25 +89,25 @@
             <div class="slider-container" id="islands"><img src="https://picsum.photos/id/192/2400/1000" alt="islands"></div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <ul class="navbar-nav d-flex flex-row ">
-                <li class="nav-item px-3 ">
+            <ul class="navbar-nav d-flex flex-row container">
+                <li class="nav-item px-3 " style="width:15%">
                     <a class="nav-link text-center" href="#north">
                         <p>北台灣</p>
                     </a> 
                 </li>
-                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#center">
+                <li class="nav-item px-3 text-center" style="width:15%"> <a class="nav-link" href="#center">
                     <p>中台灣</p>
                 <p></p>
             </a> </li>
-                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#south">
+                <li class="nav-item px-3 text-center" style="width:15%"> <a class="nav-link" href="#south">
                     <p>南台灣</p>
                 <p></p>
             </a> </li>
-                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#east">
+                <li class="nav-item px-3 text-center" style="width:15%"> <a class="nav-link" href="#east">
                     <p>花  東</p>
                 <p></p>
             </a> </li>
-                <li class="nav-item px-3 text-center"> <a class="nav-link" href="#islands">
+                <li class="nav-item px-3 text-center" style="width:15%"> <a class="nav-link" href="#islands">
                     <p>離  島</p>
                 <p></p>
             </a> </li>
@@ -183,7 +184,7 @@
             let currentSection = $('.region')[currentSlide].id;
             $('a.nav-link').removeClass('active').find('p.img-wrapper').remove();
             let activeNavLink = $('a[href="#' +currentSection + '"]').addClass('active');
-            activeNavLink.append('<p class="img-wrapper"><img src="./final_images_partial/mb/0all/car.png" alt="" style="width:90%"></p>');
+            activeNavLink.append('<p class="img-wrapper"><img src="./final_images_partial/mb/0all/car.png" alt="悠活專車" style="width:50%; transition: all 0.8s ease;"></p>');
         });
 
         // Navigate to slide on nav click

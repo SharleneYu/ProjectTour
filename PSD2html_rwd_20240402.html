@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SYU::食光旅行團::SYU</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Custom Styles -->
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: url(./final_images_partial/pc/0all/bg.png);
+        }
+
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+        }
+
+        .slider {
+            padding: 0;
+            margin: 0;
+            height: 70vh;
+            width: 100vw;
+        }
+
+        /* .slick-slide {
+             height: 100vh;
+             color: white;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 48px;
+         } */
+
+        .slider-container {
+            height: 75vh;
+            width: 100vw;
+        }
+
+        .nav-link.active {
+            /* padding-top:50px; */
+            border-radius: 10%;
+            font-weight: bold;
+            background-color: rgb(223, 189, 144);
+            
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 25vh;
+            position: fixed;
+            /* bottom: 0; */
+            justify-content: center;
+            /* background-image: url(./final_images_partial/pc/0all/bg.png); */
+            background-repeat: repeat;
+        }
+
+        .road {
+            width: 100vw;
+            padding-top: 12.5vh;
+        }
+
+        .slideDown {
+            height: 85%;
+            width: 100vw;
+        }
+
+        .mb-nav {
+            height: 10%;
+            width: 100vw;
+            /* background-image: url(./final_images_partial/pc/0all/bg.png); */
+        }
+
+        .mb_columns {
+            width: 50vw;
+        }
+
+        .mb-col {
+            width: 40 vw;
+            height: 40vw;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Desktop: Hidden only on sm -->
+    <div class="d-none d-md-block container-fluid" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <div
+            class="container-fluid d-flex flex-row mx-auto my-auto carousel-container visible-sm visible-md visible-lg pt-5">
+
+            <div id="prev" class="col-1 my-auto mx-auto" style="width:5%; text-align: center; ">
+                <img src="./final_images_partial/pc/0all/arrow_left.png" alt="prevP" style="width:50%">
+            </div>
+            <div class="slider" style="width:90%; text-align: center;">
+                <!-- Desktop: departure -->
+                <div class="slider-container" id="departure"
+                    style="background-image: url(./final_images_partial/pc/1departure/foodTour_pc_main.png); background-repeat: no-repeat; background-position: center;">
+                </div>
+
+                <!-- Desktop: northern -->
+                <div class="slider-container container-fluid" id="northern">
+                    <div class=" row d-flex">
+                        <div class="col-3">
+                            <img src="./final_images_partial/pc/2nothern/twn_1nothern_0.png" alt="香魚的故鄉1"
+                                style="width:100%; margin:auto">
+                        </div>
+                        <div class="col-8">
+                            <img src="./final_images_partial/pc/2nothern/twn_1northern_1.png" alt="香魚的故鄉2"
+                                style="width:100%; margin:auto">
+                        </div>
+                        <div class="col-1"></div>
+
+                    </div>
+
+                    <div class="row" style="height:5%; margin-top:-30px;margin-bottom:80px;">
+                        <img src="./final_images_partial/pc/2nothern/twn_1northern_dots.png" alt="dots"
+                            style="margin-left:15%; width:80%; ">
+                    </div>
+
+                    <div class="row d-flex ">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-3 pt-3">
+                            <img src="./final_images_partial//pc/2nothern/twn_1northern_2.png" alt="黃金蛋酥西魯肉"
+                                style="width:100%; padding-top:20px">
+                        </div>
+                        <div class="col-3">
+                            <img src="./final_images_partial//pc/2nothern/twn_1northern_3.png" alt="復興有機蔬果"
+                                style="width:100%; ">
+                        </div>
+                        <div class="col-3 pt-4">
+                            <img src="./final_images_partial//pc/2nothern/twn_1northern_4.png" alt="基隆手工小甜不辣"
+                                style="width:100%; padding-top:20px">
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                    </div>
+                </div>
+
+                <!-- Desktop: central -->
+                <div class="slider-container" id="central" style="margin:auto; text-align:center">
+                    <h1>Central Taiwan to be done!</h1>
+                    <img src="../animated-重複播放-S.png" alt="" style="height:100%; margin:auto;">
+                </div>
+
+                <!-- Desktop: southern -->
+                <div class="slider-container" id="southern">
+
+                    <h1>Southern Taiwan to be done!</h1>
+                </div>
+
+                <!-- Desktop: eastern -->
+                <div class="slider-container" id="eastern">
+                    <h1>Eastern Taiwan to be done!</h1>
+                </div>
+
+                <!-- Desktop: islands -->
+                <div class="slider-container" id="islands">
+                    <h1>Islands to be done!</h1>
+                </div>
+            </div>
+            <div id="next" class="col-1  my-auto mx-auto" style="width:5%; text-align: center;">
+                <img src="./final_images_partial/pc/0all/arrow_right.png" alt="next`P"  style="width:50%">
+            </div>
+        </div>
+
+        <nav class="row navbar navbar-expand-lg ">
+            <ul class="navbar-nav d-flex flex-row justify-content-around container-fluid"
+                style=" margin-top:-70px; padding-left:10%; padding-right: 10%; ">
+
+                <li class="nav-item col-2 px-5" >
+                    <a class="nav-link" href="#departure">
+                        <p><img src="./final_images_partial/pc/0all/tag_0start.png" alt="northern"
+                            style="width:100%; margin:auto"></p>
+                    </a>
+                </li>
+                <li class="nav-item col-2 px-5 ">
+                    <a class="nav-link" href="#northern">
+                        <p><img src="./final_images_partial/pc/0all/tag1nothern.png" alt="northern"
+                            style="width:100%; margin:auto"></p>
+                    </a>
+                </li>
+                <li class="nav-item col-2 px-5 ">
+                    <a class="nav-link" href="#central">
+                        <p><img src="./final_images_partial/pc/0all/tag2central.png" alt="central"
+                            style="width:100%; margin:auto"></p>
+                    </a>
+                </li>
+                <li class="nav-item col-2 px-5 ">
+                    <a class="nav-link" href="#southern">
+                        <p><img src="./final_images_partial/pc/0all/tag3southern.png" alt="southern"
+                            style="width:100%; margin:auto"></p>
+                    </a>
+                </li>
+                <li class="nav-item col-2 px-5 ">
+                    <a class="nav-link" href="#eastern">
+                        <p><img src="./final_images_partial/pc/0all/tag_4eastern.png" alt="eastern"
+                            style="width:100%; margin:auto"></p>
+                    </a>
+                </li>
+                <li class="nav-item col-2 px-5 ">
+                    <a class="nav-link" href="#islands">
+                        <p><img src="./final_images_partial/pc/0all/tag_5islands.png" alt="islands"
+                            style="width:100%;margin:auto;"></p>
+                    </a>
+                </li>
+            </ul> 
+        </nav>
+        <div class="road row" style="background-image: url(./final_images_partial/pc/0all/road.png); background-repeat:no-repeat; background-position: bottom;margin-top:4.5%; padding-left:10%; padding-right: 10%; text-align: center;">
+            <div class="col-2" ></div>
+            <div class="col-2" ></div>
+            <div class="col-2" ></div>
+            <div class="col-2" ></div>
+            <div class="col-2" ><img src="./final_images_partial/pc/0all/bus.png" alt="" style="width:80%; margin-top:-70%"></div>
+            <div class="col-2" ><img src="./final_images_partial/pc/0all/bus.png" alt="" style="width:80%; margin-top:-70%"></div>
+        </div>
+    </div>
+
+    <!-- Mobile: Hidden only on md-->
+    <div class="d-md-none text-dark">
+
+        <div class=" pt-5 pb-5 container-fluid" id="mbDeparture" style="margin-bottom:150px;">
+            <div class="row" style="height:100px"></div>
+            <div class="row" style="height:80%">
+                <img src="./final_images_partial/mb/1start/foodTour_mb_main.png" alt="起點" style="width: 100%;" ;>
+            </div>
+            <div class="row" style="height:100px"></div>
+        </div>
+
+        <!-- Mobile: northern -->
+        <div class="" id="mbNorthern" Z>
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <img src="./final_images_partial/mb/2nothern/twn_1nothern_0.png" alt="" style="width:60%; ">
+                    </div>
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="col-1"></div>
+                    <div class="col-2" style="margin-top:-5%"><img
+                            src="./final_images_partial/mb/2nothern/twn_1nothern_dots.png" alt=""
+                            style="width:100%;text-align:right"></div>
+                    <div class="col-9 " style="margin-left:-10%; margin-top: 5%; ">
+                        <div class="mt-0 mb-0" style="margin-left:-5%"><img
+                                src="./final_images_partial/mb/2nothern/twn_1nothern_1.png" alt="香魚的故鄉1"
+                                style="width:95%"></div>
+                        <div class="mt-3"><img src="./final_images_partial/mb/2nothern/twn_1nothern_2.png" alt="黃金蛋酥西魯肉"
+                                style="width:95%"></div>
+                        <div class="mt-0 mb-0"><img src="./final_images_partial/mb/2nothern/twn_1nothern_3.png"
+                                alt="復興有機蔬果" style="width:95%"></div>
+                        <div class="mt-0" style="margin-bottom:50px"><img
+                                src="./final_images_partial/mb/2nothern/twn_1nothern_4.png" alt="基隆手工小甜不辣"
+                                style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="container-fluid" style="width:90%; text-align:right">
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile: central -->
+        <div class=" bg-warning" id="mbCentral" style="margin-bottom:500px;">
+            <h1 class="text-primary">這是Mobile中台灣</h1>
+            <img src="../animated-重複播放-S.png" alt="" style="text-align:center; margin:auto; width: 100%">
+        </div>
+
+        <!-- Mobile: southern -->
+        <div class=" bg-danger" id="mbSouthern" style="height:1000px; margin-bottom:500px;">
+            <h1 class="text-white">這是Mobile南台灣</h1>
+
+        </div>
+
+        <!-- Mobile: eastern -->
+        <div class=" bg-success" id="mbEastern" style="height:1000px; margin-bottom:150px;">
+            <h1 class="text-white">這是Mobile花東</h1>
+
+        </div>
+
+        <!-- Mobile: islands -->
+        <div class=" bg-info" id="mbIslands" style="height:1000px; margin-bottom:150px;">
+            <h1 class="text-white">這是Mobile離島</h1>
+
+        </div>
+
+        <nav class="nav fixed-bottom  mb-nav"
+            style="background-image: url(./final_images_partial/mb/0all/road.png); background-repeat: no-repeat; background-position: bottom;">
+
+            <ul class=" d-flex flex-row list-unstyled m-auto ">
+
+                <li class="nav-item " style="margin-top:-100px;">
+                    <a class="nav-link" href="#mbDeparture">
+                        <img src="./final_images_partial/mb/0all/tag_0start.png?v=0325" alt="departure"
+                            style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item " style="margin-top:-100px;">
+                    <a class="nav-link" href="#mbNorthern">
+                        <img src="./final_images_partial/mb/0all/tag_1northern.png" alt="northern" style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item " style="margin-top:-100px;">
+                    <a class="nav-link" href="#mbCentral">
+                        <img src="./final_images_partial/mb/0all/tag_2central.png?v=0325" alt="central"
+                            style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item " style="margin-top:-100px;">
+                    <a class="nav-link" href="#mbSouthern">
+                        <img src="./final_images_partial/mb/0all/tag_3southern.png?v=0325" alt="southern"
+                            style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item " style="margin-top:-100px;">
+                    <a class="nav-link" href="#mbEastern">
+                        <img src="./final_images_partial/mb/0all/tag_4eastern.png?v=0325" alt="eastern"
+                            style="width:100%;">
+                    </a>
+                </li>
+                <li class="nav-item " style="margin-top:-100px;">
+                    <a class="nav-link" href="#mbIslands">
+                        <img src="./final_images_partial/mb/0all/tag_5islands.png?v=0325" alt="islands"
+                            style="width:100%;">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</body>
+
+</html>
+
+<script>
+
+    // 獲取視窗的寬度和高度
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    // 在控制台console log中輸出尺寸
+    console.log('Width: ' + width + ', Height: ' + height);
+
+    $(document).ready(function () {
+        function initScrollSpy() {
+            // 检测是否在桌面视图
+            let isDesktop = $(window).width() >= 768; // 以768px作为移动设备和桌面设备的分界点
+
+            if (isDesktop) {
+                // 如果是桌面视图，则激活桌面视图的滑动功能和Scrollspy
+                $('.slider').slick({
+                    vertical: false,
+                    dots: false,
+                    infinite: false,
+                    initialSlide: 0,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    arrows: false,
+                });
+
+                $('.slider').on('afterChange', function (event, slick, currentSlide) {
+                    let currentSection = $('.slider-container')[currentSlide].id;
+                    $('a.nav-link').removeClass('active');
+                    $('a[href="#' + currentSection + '"]').addClass('active');
+                });
+
+                $('a.nav-link').click(function (e) {
+                    e.preventDefault();
+                    let targetSlide = $(this).attr('href').substring(1);
+                    let slideIndex = $('.slider-container').index($('#' + targetSlide));
+                    $('.slider').slick('slickGoTo', slideIndex);
+                });
+
+                $(document).on('wheel', function (e) {
+                    if (e.originalEvent.deltaY > 0) {
+                        $('.slider').slick('slickNext');
+                    } else {
+                        $('.slider').slick('slickPrev');
+                    }
+
+                $('#prev').click(function(){
+                    $('.slider').slick('slickPrev');
+                })
+
+
+                
+                $('#next').click(function(){
+                    $('.slider').slick('slickNext');
+                })
+
+                });
+            } else {
+                // 如果是移动视图，则激活移动视图的滚动spy功能
+                $(window).scroll(function() {
+                    $('nav ul li a').each(function() {
+                        var currLink = $(this);
+                        var refElement = $(currLink.attr("href"));
+
+                        if (refElement.position().top <= $(window).scrollTop() && refElement.position().top + refElement.height() > $(window).scrollTop()) {
+                            $('nav ul li a').removeClass("active");
+                            currLink.addClass("active");
+                        } else{
+                            currLink.removeClass("active");
+                        }
+                    });
+                });
+            }
+        }
+
+        initScrollSpy(); // 網頁初始時執行Scrollspy
+
+        // 視窗尺寸改變時，再執行Scrollspy
+        $(window).resize(function() {
+            initScrollSpy();
+        });
+    });
+</script>
