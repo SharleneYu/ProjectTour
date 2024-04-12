@@ -103,8 +103,8 @@
         .slider {
             padding: 0;
             margin: 0;
-            height: 70vh;
-            width: 100vw;
+            height: 70%;
+            width: 100%;
         }
 
         .slider-container {
@@ -119,10 +119,9 @@
         }
 
         .navbar {
-            left:0;
             top:75%;
             width: 100%;
-            height: 30vh;
+            height: 25%;
             position: fixed;
             justify-content: around;
         }
@@ -156,8 +155,8 @@
         .mbLink.active::after {
             content: "";
             position:absolute;
-            transform: translateX(-75%);
-            text-align: center;
+            transform: translateX(10%);
+            /* text-align: center; */
             top: 70px;
             width: 100%;
             height: 50px;
@@ -165,13 +164,14 @@
             background-size: contain;
             background-repeat: no-repeat;
             margin-top: 0;
-
+            z-index:9999;
         }
 
 
         .road {
-            width: 100vw;
-            padding-top: 15vh;
+            width: 100%;
+            top:0;
+            bottom:0;
             position: bottom;
         }
 
@@ -442,7 +442,7 @@
         <div class="container-fluid road" style=" position:fixed; background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_road.png); background-repeat:no-repeat; background-position: bottom; margin-top:6%; z-index:0; margin-bottom:0; text-align: center; ">
         </div>
         <nav class="row navbar navbar-expand-lg ms-5" style="width:95%;"  >
-            <ul class="navbar-nav container-fluid" style="margin-top:-4.2%; ">
+            <ul class="navbar-nav container-fluid" style="margin-top:-3%; ">
 
                 <li class="nav-item col-2 px-5" style="z-index:100;">
                     <a class="nav-link pcLink" href="#departure">
@@ -486,7 +486,7 @@
     <div class="d-md-none text-dark"
         style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bg.png); background-repeat: repeat;">
 
-        <div class="container-fluid pt-5 pb-5 " id="mbDeparture" style="margin-bottom:150px;">
+        <div class="container-fluid pt-5 pb-5 " id="mbDeparture" style="margin-bottom:200px;">
             <div class="row" style="height:100px"></div>
             <div class="row px-4" style="height:80%">
                 <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/1departure.png?v=000" alt="起點" style="width: 100%;" ;>
@@ -793,7 +793,17 @@
 
     $(document).ready(function () {
         function initScrollSpy() {
-            let isDesktop = $(window).width() >= 768; 
+            let deviceWidth=$(window).width(); 
+            let deviceHeight=$(window).height(); 
+
+            let isDesktop = deviceWidth >= 768; 
+
+            let deviceWH_ratio= deviceWidth/deviceHeight;
+            if(deviceWH_ratio>2.1){
+                slidesToShow=1.3;
+            }else{
+                slidesToShow=1;
+            }
 
             if (isDesktop) {
                 $('.slider').slick({
@@ -802,7 +812,7 @@
                     infinite: false,
                     initialSlide: 5,
                     speed: 1000,
-                    slidesToShow: 1,
+                    slidesToShow: slidesToShow,
                     slidesToScroll: 1,
                     adaptiveHeight: false,
                     arrows: false,
