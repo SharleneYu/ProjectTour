@@ -118,6 +118,21 @@
             height: 40%;            
         }
 
+        .slick-arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            cursor: pointer;
+        }
+        .slick-prev{
+            left:0;
+        }
+        .slick-next{
+            right:0;
+        }
+
+
         .navbar {
             top:75%;
             width: 100%;
@@ -214,13 +229,10 @@
         <!-- https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_bg.png -->
 
 
-        <div
-            class="container-fluid d-flex flex-row mx-auto my-auto carousel-container visible-sm visible-md visible-lg pt-5">
+        <div class="container-fluid ">
 
-            <div id="prev" class="col-1 my-auto mx-auto" style="width:5%; text-align: center; ">
-                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_left.png" alt="prevP" style="width:55%">
-            </div>
-            <div class="slider" style="width:90%; text-align: center;">
+
+            <div class="slider mx-auto mt-3 mb-5" style="width:90%; ">
                 <!-- Desktop: departure -->
                 <div class="slider-container" id="departure">
                     <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/1_departure.png" alt="悠活出發囉" style="width:50%; margin:auto; margin-top: 3%">
@@ -434,9 +446,7 @@
 
 
             </div>
-            <div id="next" class="col-1  my-auto mx-auto" style="width:5%; text-align: center;">
-                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_right.png" alt="next`P" style="width:55%">
-            </div>
+
         </div>
 
         <div class="container-fluid road" style=" position:fixed; background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_road.png); background-repeat:no-repeat; background-position: bottom; margin-top:6%; z-index:0; margin-bottom:0; text-align: center; ">
@@ -810,12 +820,15 @@
                     vertical: false,
                     dots: false,
                     infinite: false,
-                    initialSlide: 5,
+                    initialSlide: 0,
                     speed: 1000,
                     slidesToShow: slidesToShow,
                     slidesToScroll: 1,
                     adaptiveHeight: false,
-                    arrows: false,
+
+                    prevArrow: '<div class="slick-prev"><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_left.png" alt="prevP" style="width:70%; "></div>',
+                    nextArrow: '<div class="slick-next"><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_right.png" alt="nextP" style="width:70%;"></div>'
+
                 });
 
                 $('.slider').on('afterChange', function (event, slick, currentSlide) {
