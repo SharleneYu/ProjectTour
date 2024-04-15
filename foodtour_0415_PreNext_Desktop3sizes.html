@@ -86,6 +86,14 @@
             font-family: 'Zen Maru Gothic', sans-serif;
         }
 
+        html, body  {
+            /* overflow-x: hidden; */
+            background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bg.png); 
+            background-repeat: repeat;
+            z-index:-1;
+        }
+
+
         html, body, .container-fluid  {
             /* overflow-x: hidden; */
             padding: 0;
@@ -110,6 +118,9 @@
             height: 40%;            
         }
 
+        .dot-row{
+            height: 10%;
+        }
 
         .slick-arrow{
             position: absolute;
@@ -134,10 +145,9 @@
             justify-content: around;
         }
 
-
         .pcLink {
             position: relative;
-            padding-bottom: 30%;
+            padding-bottom: 50px;
         }
 
 
@@ -209,7 +219,6 @@
             width: 100%;
         }
 
-
     </style>
 
 
@@ -224,10 +233,10 @@
         <!-- https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_bg.png -->
 
 
-        <div class="container-fluid ">
+        <div class="container-fluid my-auto">
 
 
-            <div class="slider container-fluid" style="margin: left 5%; margin-right:5%; text-align: center;">
+            <div class="slider mx-auto my-auto" style="width:90%; ">
                 <!-- Desktop: departure -->
                 <div class="slider-container" id="departure">
                     <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/1_departure.png" alt="悠活出發囉" style="width:50%; margin:auto; margin-top: 3%">
@@ -248,7 +257,7 @@
 
                     </div>
 
-                    <div class="row" style="margin-top:-35px;">
+                    <div class="row dot-row" style="margin-top:-35px;">
                         <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2C_dots.png" alt="dots" style="margin-left:15%; width:77%; ">
                     </div>
 
@@ -291,7 +300,7 @@
 
                     </div>
 
-                    <div class="row" style="height:5%; margin-top:-43px; margin-left:-50px;">
+                    <div class="row dot-row" style="height:5%; margin-top:-43px; margin-left:-50px;">
                         <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3D_dots.png" alt="dots" style="margin-left:15%; width:76%; ">
                     </div>
 
@@ -335,7 +344,7 @@
 
                     </div>
 
-                    <div class="row" style="height:5%; margin-left:-100px; margin-top:-20px;">
+                    <div class="row dot-row" style="height:5%; margin-left:-100px; margin-top:-20px;">
                         <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4D_dots.png" alt="dots" style="margin-left:22%; width:70%; ">
                     </div>
 
@@ -375,7 +384,7 @@
                         </div>
                     </div>
 
-                    <div class="row" style="height:5%;  margin-left: 300px; margin-top:-55px;">
+                    <div class="row dot-row" style="height:5%;  margin-left: 300px; margin-top:-55px;">
                         <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5C_dots.png" alt="dots" style="width:90%; ">
                     </div>
 
@@ -401,10 +410,10 @@
                 </div>
 
                 <!-- Desktop: islands -->
-                <div class="slider-container container-fluid " id="islands">
+                <div class="slider-container container-fluid" id="islands">
                     <div class=" row slider-row d-flex">
                         <div class="col-3">
-                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6A_header.png" alt="離島" style="width:100%;">
+                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6A_header.png" alt="離島" style="width:100%; margin:auto">
                         </div>
                         <div class="col-8 ms-5">
                             <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207">
@@ -413,7 +422,7 @@
                         </div>
                     </div>
 
-                    <div class="row" style="margin-left: 200px; margin-top:-70px; ">
+                    <div class="row dot-row" style="margin-left: 200px; margin-top:-70px; ">
                         <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6C_dots.png" alt="dots" style=" width:85%; margin-left: 70px;">
                     </div>
 
@@ -444,40 +453,40 @@
 
         </div>
 
-        <div class="container-fluid road" style=" position:fixed; background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_road.png); background-repeat:repeat-x; background-size:cover; bottom; z-index:0; ">
+        <div class="container-fluid road" style=" position:fixed; background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_road.png); background-repeat:no-repeat; background-position: bottom; margin-top:6%; z-index:0; margin-bottom:0; text-align: center; ">
         </div>
-        <nav class="row navbar navbar-expand-lg" style="margin-left: 10%; width:80%"  >
-            <ul class="navbar-nav pcNav-container" >
+        <nav class="row navbar navbar-expand-lg ms-5" style="width:95%;"  >
+            <ul class="navbar-nav container-fluid" style="margin-top:-3%; ">
 
-                <li class="nav-item col-2 px-4" style="z-index:10; ;">
+                <li class="nav-item col-2 px-5" style="z-index:100;">
                     <a class="nav-link pcLink" href="#departure">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_departure.png" alt="northern" style="height:70%; ">
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_departure.png" alt="northern" style="width:100%; margin:auto">
                         </p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-4" style="z-index:10; ;">
+                <li class="nav-item col-2 px-5" style="z-index:100;">
                     <a class="nav-link pcLink" href="#northern">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_nothern.png" alt="northern" style="height:70%; "></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_nothern.png" alt="northern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-4" style="z-index:10; ;">
+                <li class="nav-item col-2 px-5" style="z-index:100;">
                     <a class="nav-link pcLink" href="#central">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_central.png" alt="central" style="height:70%; "></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_central.png" alt="central" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-4" style="z-index:10; ;">
+                <li class="nav-item col-2 px-5" style="z-index:100;">
                     <a class="nav-link pcLink" href="#southern">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_southern.png" alt="southern" style="height:70%; "></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_southern.png" alt="southern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-4" style="z-index:10; ;">
+                <li class="nav-item col-2 px-5" style="z-index:100;">
                     <a class="nav-link pcLink" href="#eastern">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_eastern.png" alt="eastern" style="height:70%; "></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_eastern.png" alt="eastern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-4 " style="z-index:10; ;">
+                <li class="nav-item col-2 px-5 " style="z-index:100;">
                     <a class="nav-link pcLink" href="#islands">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_islands.png" alt="islands" style="height:70%;;"></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_islands.png" alt="islands" style="width:100%;margin:auto;"></p>
                     </a>
                 </li>
             </ul>
@@ -491,7 +500,7 @@
     <div class="d-md-none text-dark"
         style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bg.png); background-repeat: repeat;">
 
-        <div class="container-fluid pt-5 pb-5 " id="mbDeparture" style="margin-bottom:200px;">
+        <div class="container-fluid pt-5 pb-5 active" id="mbDeparture" style="margin-bottom:200px;">
             <div class="row" style="height:100px"></div>
             <div class="row px-4" style="height:80%">
                 <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/1departure.png?v=000" alt="起點" style="width: 100%;" ;>
@@ -820,12 +829,11 @@
                     slidesToShow: slidesToShow,
                     slidesToScroll: 1,
                     adaptiveHeight: false,
-                    
-                    prevArrow: '<div class="slick-prev"><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_left.png" alt="prevP" style="width:55%"></div>',
-                    nextArrow: '<div class="slick-next"><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_right.png" alt="next`P" style="width:55%"></div>'
+
+                    prevArrow: '<div class="slick-prev" style= ><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_left.png" alt="prevP" style="width:70%; "></div>',
+                    nextArrow: '<div class="slick-next" style= ><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_right.png" alt="nextP" style="width:70%;"></div>'
 
                 });
-
 
                 $('.slider').on('afterChange', function (event, slick, currentSlide) {
                     let currentSection = $('.slider-container')[currentSlide].id;
@@ -846,6 +854,17 @@
                     } else {
                         $('.slider').slick('slickPrev');
                     }
+
+                    $('#prev').click(function () {
+                        $('.slider').slick('slickPrev');
+                    })
+
+
+
+                    $('#next').click(function () {
+                        $('.slider').slick('slickNext');
+                    })
+
                 });
             } else {
             // mobile
