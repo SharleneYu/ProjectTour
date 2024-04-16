@@ -154,8 +154,8 @@
             top: 50%;
             left: 45%;
             transform: translateX(-45%);
-            width: 150%;
-            height: 150%;
+            width: 135%;
+            height: 135%;
             background-image: url('https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_bus.png?v=shadow');
             background-size: contain;
             background-repeat: no-repeat;
