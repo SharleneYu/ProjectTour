@@ -12,7 +12,9 @@
 
     <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    
     <!-- anti-flicker snippet (recommended)  -->
     <!-- <style>.async-hide { opacity: 0 !important} </style>
     <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -21,7 +23,8 @@
     })(window,document.documentElement,'async-hide','dataLayer',4000,
     {'OPT-WZRGSZV':true});</script>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WZRGSZV"></script> -->
-    <script src="/js/jquery-3.6.4.min.js"></script>
+
+    <!-- <script src="/js/jquery-3.6.4.min.js"></script>   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script sync src="//js.yooho.com.tw/themes/lativ/js/sweetalert.min.js"></script>
@@ -83,6 +86,14 @@
             font-family: 'Zen Maru Gothic', sans-serif;
         }
 
+        html, body  {
+            /* overflow-x: hidden; */
+            background-image: url(./final_imgs/MB/0_bg.png); 
+            background-repeat: repeat;
+            /* z-index:-1; */
+        }
+
+
         html, body, .container-fluid  {
             /* overflow-x: hidden; */
             padding: 0;
@@ -92,18 +103,48 @@
         .slider {
             padding: 0;
             margin: 0;
-            height: 70vh;
-            width: 100vw;
+            height: 70%;
+            width: 100%;
         }
 
         .slider-container {
-            height: 75vh;
-            width: 100vw;
+            /* height: 75vh; */
+            width: 100%;
+            margin-top:0;      
+        }
+
+        .slider-row{
+            height: 40%;            
+        }
+
+        .slick-arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            cursor: pointer;
+        }
+        .slick-prev{
+            left:0;
+        }
+        .slick-next{
+            right:0;
+        }
+
+
+        .navbar {
+            position: fixed;
+            
+            top:75%;
+            width: 100%;
+            height: 25%;
+            justify-content: around;
         }
 
         .pcLink {
             position: relative;
             padding-bottom: 50px;
+            z-index:2;
         }
 
 
@@ -115,11 +156,12 @@
             transform: translateX(-45%);
             width: 150%;
             height: 150%;
-            background-image: url('./final_imgs/PC/0_bus.pngv=shadow');
+            background-image: url('./final_imgs/PC/0_bus.png?v=shadow');
             background-size: contain;
             background-repeat: no-repeat;
-            margin-top: -15px;
+            z-index: 1;
         }
+
 
         .mbLink {
             position: relative;
@@ -129,29 +171,23 @@
         .mbLink.active::after {
             content: "";
             position:absolute;
-            transform: translateX(-75%);
-            text-align: center;
+            transform: translateX(25%);
             top: 70px;
+            /* left:0; */
             width: 100%;
             height: 50px;
             background-image: url('./final_imgs/MB/0_bus.png?v=shadow');
             background-size: contain;
             background-repeat: no-repeat;
             margin-top: 0;
-
+            z-index:1;
         }
 
-        .navbar {
-            width: 100vw;
-            height: 30vh;
-            position: fixed;
-            justify-content: center;
-            background-repeat: repeat;
-        }
 
         .road {
-            width: 100vw;
-            padding-top: 15vh;
+            width: 100%;
+            top:0;
+            bottom:0;
             position: bottom;
         }
 
@@ -170,7 +206,7 @@
         }
 
         .mb-col {
-            width: 40 vw;
+            width: 40vw;
             height: 40vw;
         }
 
@@ -188,62 +224,56 @@
 <body>
 
     <!-- Desktop: Hidden only on sm -->
-    <div class="d-none d-md-block container-fluid" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50"
-        style="background-image: url(./final_imgs/PC/0_bg.png); background-repeat: repeat;">
+    <div class="d-none d-md-block container-fluid" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
+        <!-- style="background-image: url(./final_imgs/PC/0_bg.png); background-repeat: repeat;" -->
         <!-- ./final_imgs/PC/0_bg.png -->
 
 
-        <div
-            class="container-fluid d-flex flex-row mx-auto my-auto carousel-container visible-sm visible-md visible-lg pt-5">
+        <div class="container-fluid ">
 
-            <div id="prev" class="col-1 my-auto mx-auto" style="width:5%; text-align: center; ">
-                <img src="./final_imgs/PC/0_left.png" alt="prevP" style="width:55%">
-            </div>
-            <div class="slider" style="width:90%; text-align: center;">
+
+            <div class="slider mx-auto mt-3 mb-5" style="width:90%; ">
                 <!-- Desktop: departure -->
                 <div class="slider-container" id="departure">
-                    <img src="./final_imgs/PC/1_departure.png" alt="悠活出發囉"
-                        style="height: 70%; text-align:center; margin:auto; padding-top:50px;">
+                    <img src="./final_imgs/PC/1_departure.png" alt="悠活出發囉" style="width:50%; margin:auto; margin-top: 3%">
                 </div>
-
-
-                
 
                 <!-- Desktop: northern -->
                 <div class="slider-container container-fluid" id="northern">
-                    <div class=" row d-flex ">
+                    <div class=" row d-flex slider-row">
                         <div class="col-3">
+                            
                             <img src="./final_imgs/PC/2A_header.png" alt="北台灣" style="width:100%; margin:auto">
+
                         </div>
                         <div class="col-8">
-                            <a href="https://www.yooho.com.tw/activity.php?act=yilan_fish">
-                                <img src="./final_imgs/PC/2B_fish.png" alt="香魚的故鄉" style="width:110%; margin:auto">
+                            <a href="https://www.yooho.com.tw/activity.php?act=yilan_fish" target="_blank">
+                                <img src="./final_imgs/PC/2B_fish.png" alt="香魚的故鄉" style="width:100%; margin:auto">
                             </a>
                         </div>
                         <div class="col-1"></div>
 
                     </div>
 
-                    <div class="row" style="height:5%; margin-top:-45px;margin-bottom:80px;">
-                        <img src="./final_imgs/PC/2C_dots.png" alt="dots" style="margin-left:15%; width:80%; ">
+                    <div class="row" style="margin-top:-35px;">
+                        <img src="./final_imgs/PC/2C_dots.png" alt="dots" style="margin-left:15%; width:77%; ">
                     </div>
 
-                    <div class="row d-flex ">
-                        <div class="col-4 pt-3 ms-5">
-                            <a href="https://www.yooho.com.tw/goods.php?id=8207">
-                                <img src="./final_imgs/PC/2D_xiluzo.png" alt="黃金蛋酥西魯肉"
-                                    style="height:80%; padding-top:20px; padding-left:50px">
+                    <div class="row d-flex  slider-row" style="margin-top:-30px;">
+                        <div class="col-4 ms-5" >
+                            <a href="https://www.yooho.com.tw/goods.php?id=8207" target="_blank">
+                                <img src="./final_imgs/PC/2D_xiluzo.png" alt="黃金蛋酥西魯肉"  style="width:75%; margin-left:20%;">
                             </a>
                         </div>
-                        <div class="col-4" style="margin-top:-20px;">
-                            <a href="https://www.yooho.com.tw/category.php?id=1592">
-                                <img src="./final_imgs/PC/2E_vegi.png" alt="復興有機蔬果" style="height:80%; ">
+                        <div class="col-4 ms-4" style="margin-top:-20px;">
+                            <a href="https://www.yooho.com.tw/category.php?id=1592" target="_blank">
+                                <img src="./final_imgs/PC/2E_vegi.png" alt="復興有機蔬果" style="width:75%; ">
                             </a>
                         </div>
-                        <div class="col-3 pt-4" style="margin-left:-40px">
-                            <a href="https://www.yooho.com.tw/goods.php?id=5208">
-                                <img src="./final_imgs/PC/2F_tempura.png" alt="基隆手工小甜不辣" style="height:80%;">
+                        <div class="col-3 mt-3" style="margin-left:-45px">
+                            <a href="https://www.yooho.com.tw/goods.php?id=5208" target="_blank">
+                                <img src="./final_imgs/PC/2F_tempura.png" alt="基隆手工小甜不辣" style="width:98%; margin-left:-30px">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -252,42 +282,41 @@
 
                 <!-- Desktop: central -->
                 <div class="slider-container container-fluid" id="central">
-                    <div class=" row d-flex">
+                    <div class=" row slider-row d-flex ">
                         <div class="col-3">
-                            <img src="./final_imgs/PC/3A_header.png" alt="中台灣" style="width:100%; margin:auto">
+                            <img src="./final_imgs/PC/3A_header.png" alt="中台灣" style="width:100%;">
                         </div>
                         <div class="col-4">
-                            <a href="https://www.yooho.com.tw/category.php?id=1394">
-                                <img src="./final_imgs/PC/3B_lamb.png" alt="彰化新鮮羊" style="width:80%; margin:auto">
+                            <a href="https://www.yooho.com.tw/category.php?id=1394" target="_blank">
+                                <img src="./final_imgs/PC/3B_lamb.png" alt="彰化新鮮羊" style="width:95%; ">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a href="https://www.yooho.com.tw/category.php?id=1357">
-                                <img src="./final_imgs/PC/3C_beef.png" alt="雲林安心牛" style="width:80%; margin:auto">
+                            <a href="https://www.yooho.com.tw/category.php?id=1357" target="_blank">
+                                <img src="./final_imgs/PC/3C_beef.png" alt="雲林安心牛" style="width:90%; ">
                             </a>
                         </div>
 
                     </div>
 
-                    <div class="row" style="height:5%; margin-top:-50px;margin-bottom:80px; margin-left:-50px;">
-                        <img src="./final_imgs/PC/3D_dots.png" alt="dots" style="margin-left:15%; width:80%; ">
+                    <div class="row" style="height:5%; margin-top:-43px; margin-left:-50px;">
+                        <img src="./final_imgs/PC/3D_dots.png" alt="dots" style="margin-left:15%; width:76%; ">
                     </div>
 
-                    <div class="row d-flex ">
-                        <div class="col-4 " style="margin-left:50px; padding-left: 60px; padding-top:40px">
-                            <a href="https://www.yooho.com.tw/category.php?id=1103">
-                                <img src="./final_imgs/PC/3E_eggs.png" alt="安心放牧雞蛋" style="width:80%; ">
+                    <div class="row slider-row d-flex " style="margin-top:-60px;">
+                        <div class="col-3 mt-3" >
+                            <a href="https://www.yooho.com.tw/category.php?id=1103" target="_blank">
+                                <img src="./final_imgs/PC/3E_eggs.png" alt="安心放牧雞蛋" style="width:97%; margin-left:120px; ">
                             </a>
                         </div>
-                        <div class="col-4" style="margin-left:-40px;">
-                            <a href="https://www.yooho.com.tw/category.php?id=1478">
-                                <img src="./final_imgs/PC/3F_corntato.png" alt="繽紛玉米地瓜" style="width:85%; ">
+                        <div class="col-3 ms-5 me-5" >
+                            <a href="https://www.yooho.com.tw/category.php?id=1478" target="_blank">
+                                <img src="./final_imgs/PC/3F_corntato.png" alt="繽紛玉米地瓜" style="width:112%; margin-left:100px;">
                             </a>
                         </div>
-                        <div class="col-3 pt-4">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9494">
-                                <img src="./final_imgs/PC/3G_beanplate.png" alt="非基改鮮豆包"
-                                    style="height:85%; padding-top:20px">
+                        <div class="col-3 mt-5 ms-5">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9494" target="_blank">
+                                <img src="./final_imgs/PC/3G_beanplate.png" alt="非基改鮮豆包"  style="width:100%;  margin-left:80px;">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -296,44 +325,43 @@
 
                 <!-- Desktop: southern -->
                 <div class="slider-container container-fluid" id="southern">
-                    <div class=" row d-flex">
-                        <div class="col-3">
-                            <img src="./final_imgs/PC/4A_header.png" alt="南台灣" style="width:100%; margin:auto">
+                    <div class=" row slider-row d-flex">
+                        <div class="col-3 ms-3">
+                            <img src="./final_imgs/PC/4A_header.png" alt="南台灣" style="width:103%;">
                         </div>
                         <div class="col-3 ms-5">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9969">
-                                <img src="./final_imgs/PC/4B_PorkKnuckle.png" alt="萬巒豬腳"
-                                    style="width:100%; margin:auto">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9969" target="_blank">
+                                <img src="./final_imgs/PC/4B_PorkKnuckle.png" alt="萬巒豬腳" style="width:100%; margin-left: 30px">
                             </a>
                         </div>
-                        <div class="col-3 mt-2" style="margin-left:150px;">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9845">
-                                <img src="./final_imgs/PC/4C_duckSoup.png" alt="新港鴨肉羹" style="width:100%; ">
+                        <div class="col-1"></div>
+                        <div class="col-3" >
+                            <a href="https://www.yooho.com.tw/goods.php?id=9845" target="_blank">
+                                <img src="./final_imgs/PC/4C_duckSoup.png" alt="新港鴨肉羹" style="width:100%; margin-left: -20px">
                             </a>
                         </div>
 
                     </div>
 
-                    <div class="row" style="height:5%; margin-top:-30px;margin-bottom:80px; margin-left:-100px;">
-                        <img src="./final_imgs/PC/4D_dots.png" alt="dots" style="margin-left:15%; width:80%; ">
+                    <div class="row" style="height:5%; margin-left:-100px; margin-top:-20px;">
+                        <img src="./final_imgs/PC/4D_dots.png" alt="dots" style="margin-left:22%; width:70%; ">
                     </div>
 
-                    <div class="row d-flex ">
+                    <div class="row slider-row d-flex " style="margin-top:-50px;">
                         <div class="col-1">
                         </div>
-                        <div class="col-3 ms-2 mt-3">
-                            <a href="https://www.yooho.com.tw/search.php?keywords=%E6%96%87%E6%98%8C%E9%9B%9E">
-                                <img src="./final_imgs/PC/4E_AlisanChicken.png" alt="阿里山文昌雞"
-                                    style="width:100%; padding-top:20px">
+                        <div class="col-3 mt-4  me-3">
+                            <a href="https://www.yooho.com.tw/search.php?keywords=%E6%96%87%E6%98%8C%E9%9B%9E" target="_blank">
+                                <img src="./final_imgs/PC/4E_AlisanChicken.png" alt="阿里山文昌雞" style="width:115%; margin-top:10px; margin-left:-35px;">
                             </a>
                         </div>
-                        <div class="col-3 ms-5">
-                            <a href="https://www.yooho.com.tw/category.php?id=1523">
-                                <img src="./final_imgs/PC/4F_milkfish.png" alt="北門虱目魚" style="width:95%; ">
+                        <div class="col-3 ms-4">
+                            <a href="https://www.yooho.com.tw/category.php?id=1523" target="_blank">
+                                <img src="./final_imgs/PC/4F_milkfish.png" alt="北門虱目魚" style="width:100%; margin-left:10px;">
                             </a>
                         </div>
-                        <div class="col-3 pt-4 ms-5">
-                            <a href="https://www.yooho.com.tw/category.php?id=1483">
+                        <div class="col-3 mt-2 ms-5">
+                            <a href="https://www.yooho.com.tw/category.php?id=1483" target="_blank">
                                 <img src="./final_imgs/PC/4G_Guava.png" alt="大樹安心芭樂"
                                     style="width:95%; padding-top:20px">
                             </a>
@@ -344,39 +372,36 @@
 
                 <!-- Desktop: eastern -->
                 <div class="slider-container container-fluid" id="eastern">
-                    <div class=" row d-flex">
+                    <div class=" row slider-row d-flex">
                         <div class="col-3">
                             <img src="./final_imgs/PC/5A_header.png" alt="花東" style="width:100%; margin:auto">
                         </div>
-                        <div class="col-8" style="margin-top:-15px;">
-                            <a href="https://www.yooho.com.tw/activity.php?act=hakka_rice">
-                                <img src="./final_imgs/PC/5B_hakka.png" alt="花蓮客家庄" style="width:95%; margin:auto">
+                        <div class="col-8 ms-5" style="margin-top:-5px;">
+                            <a href="https://www.yooho.com.tw/activity.php?act=hakka_rice" target="_blank">
+                                <img src="./final_imgs/PC/5B_hakka.png" alt="花蓮客家庄" style="width:80%;">
                             </a>
                         </div>
                     </div>
 
-                    <div class="row" style="height:5%;  margin-left: 200px; margin-top:-70px;margin-bottom:80px;">
+                    <div class="row" style="height:5%;  margin-left: 300px; margin-top:-55px;">
                         <img src="./final_imgs/PC/5C_dots.png" alt="dots" style="width:90%; ">
                     </div>
 
-                    <div class="row d-flex ">
-                        <div class="col-2">
-                        </div>
-                        <div class="col-3 pt-3" style="margin-left:-150px">
-                            <a href="https://www.yooho.com.tw/goods.php?id=3432">
-                                <img src="./final_imgs/PC/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條"
-                                    style="width:100%; padding-top:40px">
+                    <div class="row slider-row d-flex " style="margin-top:-30px">
+                        <div class="col-2"></div>
+                        <div class="col-3 mt-2" style="margin-left:-130px">
+                            <a href="https://www.yooho.com.tw/goods.php?id=3432" target="_blank">
+                                <img src="./final_imgs/PC/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條" style="width:100%;">
                             </a>
                         </div>
-                        <div class="col-3 ms-5 ps-5 pt-4">
-                            <a href="https://www.yooho.com.tw/goods.php?id=4221">
-                                <img src="./final_imgs/PC/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:100%; ">
+                        <div class="col-3 ms-5 ">
+                            <a href="https://www.yooho.com.tw/goods.php?id=4221" target="_blank">
+                                <img src="./final_imgs/PC/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:95%; margin-top:-10px;">
                             </a>
                         </div>
-                        <div class="col-3 pt-4 ps-5 ms-5">
-                            <a href="https://www.yooho.com.tw/goods.php?id=7580">
-                                <img src="./final_imgs/PC/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋"
-                                    style="width:100%; padding-top:20px">
+                        <div class="col-3 mt-2 ms-5">
+                            <a href="https://www.yooho.com.tw/goods.php?id=7580" target="_blank">
+                                <img src="./final_imgs/PC/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋" style="width:95%; ">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -385,39 +410,37 @@
 
                 <!-- Desktop: islands -->
                 <div class="slider-container container-fluid" id="islands">
-                    <div class=" row d-flex">
+                    <div class=" row slider-row d-flex">
                         <div class="col-3">
                             <img src="./final_imgs/PC/6A_header.png" alt="離島" style="width:100%; margin:auto">
                         </div>
-                        <div class="col-8">
-                            <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207">
-                                <img src="./final_imgs/PC/6B_penghu.png" alt="澎湖跨海漁市" style="width:100%; margin:auto">
+                        <div class="col-8 ms-5">
+                            <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207" target="_blank">
+                                <img src="./final_imgs/PC/6B_penghu.png" alt="澎湖跨海漁市" style="width:90%;">
                             </a>
                         </div>
                     </div>
 
-                    <div class="row" style="height:5%; margin-left: 200px; margin-top:-70px;margin-bottom:80px;">
-                        <img src="./final_imgs/PC/6C_dots.png" alt="dots" style=" width:95%; ">
+                    <div class="row" style="margin-left: 200px; margin-top:-70px; ">
+                        <img src="./final_imgs/PC/6C_dots.png" alt="dots" style=" width:85%; margin-left: 70px;">
                     </div>
 
-                    <div class="row d-flex ">
+                    <div class="row slider-row d-flex " style="margin-top:-20px;">
                         <div class="col-2 ">
                         </div>
-                        <div class="col-3 mt-2" style="margin-left:-100px;">
-                            <a href="https://www.yooho.com.tw/category.php?id=1506">
-                                <img src="./final_imgs/PC/6D_Myopsina.png" alt="極鮮小卷"
-                                    style="width:90%; padding-top:20px">
+                        <div class="col-3 mt-2" style="margin-left:-70px; ">
+                            <a href="https://www.yooho.com.tw/category.php?id=1506" target="_blank">
+                                <img src="./final_imgs/PC/6D_Myopsina.png" alt="極鮮小卷" style="width:90%; ">
                             </a>
                         </div>
-                        <div class="col-3 ms-5 mt-4 ">
-                            <a href="https://www.yooho.com.tw/category.php?id=1379">
+                        <div class="col-3 ms-3 mt-1 ">
+                            <a href="https://www.yooho.com.tw/category.php?id=1379" target="_blank">
                                 <img src="./final_imgs/PC/6E_RedCoralTrout.png" alt="極品紅條" style="width:90%; ">
                             </a>
                         </div>
-                        <div class="col-3  ms-3 mt-2 ">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9179">
-                                <img src="./final_imgs/PC/6F_brownsugarCake.png" alt="黑妞黑糖糕"
-                                    style="width:100%; padding-top:20px">
+                        <div class="col-3  ms-3 mt-4 ">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9179" target="_blank">
+                                <img src="./final_imgs/PC/6F_brownsugarCake.png" alt="黑妞黑糖糕" style="width:100%; ">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -426,59 +449,49 @@
 
 
             </div>
-            <div id="next" class="col-1  my-auto mx-auto" style="width:5%; text-align: center;">
-                <img src="./final_imgs/PC/0_right.png" alt="next`P" style="width:55%">
-            </div>
+
         </div>
 
-        <div>
-        <nav class="row navbar navbar-expand-lg" >
-            <ul class="navbar-nav container-fluid"
-                style=" margin-top:-70px; padding-left:10%; padding-right: 10%; ">
+        <div class="container-fluid road" style=" position:fixed; bottom: 0; background-image: url(./final_imgs/PC/0_road.png); background-repeat:no-repeat; background-position: bottom; margin-top:6%; z-index:-1; margin-bottom:0; text-align: center; ">
+        </div>
+        <nav class="row navbar navbar-expand-lg ms-5" style="width:95%;"  >
+            <ul class="navbar-nav container-fluid" style="margin-top:-3%; ">
 
-                <li class="nav-item col-2 px-5">
-                    <a class="nav-link pcLink" href="#departure">
+                <li class="nav-item col-2 px-5" >
+                    <a class="nav-link pcLink" href="#departure" >
                         <p><img src="./final_imgs/PC/0_departure.png" alt="northern" style="width:100%; margin:auto">
                         </p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-5">
+                <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#northern">
                         <p><img src="./final_imgs/PC/0_nothern.png" alt="northern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-5">
+                <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#central">
                         <p><img src="./final_imgs/PC/0_central.png" alt="central" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-5">
+                <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#southern">
                         <p><img src="./final_imgs/PC/0_southern.png" alt="southern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-5">
+                <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#eastern">
                         <p><img src="./final_imgs/PC/0_eastern.png" alt="eastern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
-                <li class="nav-item col-2 px-5 ">
+                <li class="nav-item col-2 px-5 " >
                     <a class="nav-link pcLink" href="#islands">
                         <p><img src="./final_imgs/PC/0_islands.png" alt="islands" style="width:100%;margin:auto;"></p>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="container-fluid road" style="background-image: url(./final_imgs/PC/0_road.png); background-repeat:no-repeat; background-position: bottom;margin-top:4.5%; padding-left:10%; padding-right: 10%; text-align: center;">
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <!-- <div class="col-2"><img src="./final_images_partial/pc/0all/bus.png" alt=""
-                    style="width:80%; margin-top:-70%"></div>
-            <div class="col-2"><img src="./final_images_partial/pc/0all/bus.png" alt=""
-                    style="width:80%; margin-top:-70%"></div> -->
-        </div>
+    
+
     </div>
     </div>
 
@@ -486,7 +499,7 @@
     <div class="d-md-none text-dark"
         style="background-image: url(./final_imgs/MB/0_bg.png); background-repeat: repeat;">
 
-        <div class="container-fluid pt-5 pb-5 " id="mbDeparture" style="margin-bottom:150px;">
+        <div class="container-fluid pt-5 pb-5 active" id="mbDeparture" style="margin-bottom:200px;">
             <div class="row" style="height:100px"></div>
             <div class="row px-4" style="height:80%">
                 <img src="./final_imgs/MB/1departure.png?v=000" alt="起點" style="width: 100%;" ;>
@@ -509,23 +522,23 @@
                     </div>
                     <div class="col-9 " style="margin-left:-10%; margin-top: 5%; ">
                         <div class="mt-0 mb-0">
-                            <a href="https://www.yooho.com.tw/activity.php?act=yilan_fish">
+                            <a href="https://www.yooho.com.tw/activity.php?act=yilan_fish" target="_blank">
                                 <img src="./final_imgs/MB/2C_fish.png" alt="香魚的故鄉" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3 mb-0">
-                            <a href="https://www.yooho.com.tw/category.php?id=1592">
+                            <a href="https://www.yooho.com.tw/category.php?id=1592" target="_blank" >
                                 <img src="./final_imgs/MB/2D_vegi.png" alt="復興有機蔬果" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
-                            <a href="https://www.yooho.com.tw/goods.php?id=8207">
+                            <a href="https://www.yooho.com.tw/goods.php?id=8207" target="_blank">
                                 <img src="./final_imgs/MB/2E_xiluzo.png" alt="黃金蛋酥西魯肉" style="width:100%">
                         </div>
                         </a>
 
                         <div class="mt-3" style="margin-bottom:100px">
-                            <a href="https://www.yooho.com.tw/goods.php?id=5208">
+                            <a href="https://www.yooho.com.tw/goods.php?id=5208" target="_blank">
                                 <img src="./final_imgs/MB/2F_tempura.png" alt="基隆手工小甜不辣" style="width:100%">
                             </a>
                         </div>
@@ -553,29 +566,29 @@
                     </div>
                     <div class="col-9 " >
                         <div class="mt-3 mb-0" >
-                            <a href="https://www.yooho.com.tw/category.php?id=1394">
+                            <a href="https://www.yooho.com.tw/category.php?id=1394" target="_blank">
                                 <img src="./final_imgs/MB/3C_lamb.png" alt="彰化新鮮羊" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3 mb-0">
-                            <a href="https://www.yooho.com.tw/category.php?id=1357">
+                            <a href="https://www.yooho.com.tw/category.php?id=1357" target="_blank">
                                 <img src="./final_imgs/MB/3D_beef.png" alt="雲林安心牛" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
-                            <a href="https://www.yooho.com.tw/category.php?id=1103">
+                            <a href="https://www.yooho.com.tw/category.php?id=1103" target="_blank">
                                 <img src="./final_imgs/MB/3E_eggs.png" alt="安心放牧雞蛋" style="width:100%">
                             </a>
                         </div>
 
 
                         <div class="mt-4" >
-                            <a href="https://www.yooho.com.tw/category.php?id=1478">
+                            <a href="https://www.yooho.com.tw/category.php?id=1478" target="_blank">
                                 <img src="./final_imgs/MB/3F_corntato.png" alt="繽紛玉米地瓜" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-4" style="margin-bottom:100px">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9494">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9494" target="_blank">
                                 <img src="./final_imgs/MB/3G_beanpaste.png" alt="非基改鮮豆包" style="width:100%">
                             </a>
                         </div>
@@ -599,29 +612,29 @@
                     </div>
                     <div class="col-9 " style="margin-left:-5%; ">
                         <div class="mt-0" >
-                            <a href="https://www.yooho.com.tw/goods.php?id=9969">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9969" target="_blank">
                                 <img src="./final_imgs/MB/4C_PorkKnuckle.png" alt="萬巒豬腳" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9845">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9845" target="_blank">
                                 <img src="./final_imgs/MB/4D_duckSoup.png" alt="新港鴨肉羹" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3 ">
-                            <a href="https://www.yooho.com.tw/search.php?keywords=%E6%96%87%E6%98%8C%E9%9B%9E">
+                            <a href="https://www.yooho.com.tw/search.php?keywords=%E6%96%87%E6%98%8C%E9%9B%9E" target="_blank">
                                 <img src="./final_imgs/MB/4E_AlisanChicken.png" alt="阿里山文昌雞" style="width:100%">
                         </div>
                         </a>
 
                         <div class="mt-3 " >
-                            <a href="https://www.yooho.com.tw/category.php?id=1523">
+                            <a href="https://www.yooho.com.tw/category.php?id=1523" target="_blank">
                                 <img src="./final_imgs/MB/4F_milkfish.png" alt="北門虱目魚" style="width:100%">
                             </a>
                         </div>
 
                         <div class="mt-3 " style="margin-bottom:150px">
-                            <a href="https://www.yooho.com.tw/category.php?id=1483">
+                            <a href="https://www.yooho.com.tw/category.php?id=1483" target="_blank">
                                 <img src="./final_imgs/MB/4G_Guava.png" alt="大樹安心芭樂" style="width:100%">
                             </a>
                         </div>
@@ -649,23 +662,23 @@
                     </div>
                     <div class="col-9 " >
                         <div class="mt-4 mb-0" style="margin-left:-5%">
-                            <a href="https://www.yooho.com.tw/activity.php?act=hakka_rice">
+                            <a href="https://www.yooho.com.tw/activity.php?act=hakka_rice" target="_blank">
                                 <img src="./final_imgs/MB/5C_hakka.png" alt="花蓮客家庄" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
-                            <a href="https://www.yooho.com.tw/goods.php?id=3432">
+                            <a href="https://www.yooho.com.tw/goods.php?id=3432" target="_blank">
                                 <img src="./final_imgs/MB/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
-                            <a href="https://www.yooho.com.tw/goods.php?id=4221">
+                            <a href="https://www.yooho.com.tw/goods.php?id=4221" target="_blank">
                                 <img src="./final_imgs/MB/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:100%">
                         </div>
                         </a>
 
                         <div class="mt-4" style="margin-bottom:100px">
-                            <a href="https://www.yooho.com.tw/goods.php?id=7580">
+                            <a href="https://www.yooho.com.tw/goods.php?id=7580" target="_blank">
                                 <img src="./final_imgs/MB/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋" style="width:100%">
                             </a>
                         </div>
@@ -691,23 +704,23 @@
                     </div>
                     <div class="col-9 " >
                         <div class="mt-4" style="margin-left:-5%">
-                            <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207">
+                            <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207" target="_blank">
                                 <img src="./final_imgs/MB/6C_penghu.png" alt="澎湖跨海漁市" style="width:95%">
                             </a>
                         </div>
                         <div class="mt-3">
-                            <a href="https://www.yooho.com.tw/category.php?id=1506">
+                            <a href="https://www.yooho.com.tw/category.php?id=1506" target="_blank">
                                 <img src="./final_imgs/MB/6D_Myopsina.png" alt="極鮮小卷" style="width:95%">
                             </a>
                         </div>
                         <div class="mt-4">
-                            <a href="https://www.yooho.com.tw/category.php?id=1379">
+                            <a href="https://www.yooho.com.tw/category.php?id=1379" target="_blank">
                                 <img src="./final_imgs/MB/6E_RedCoralTrout.png" alt="極品紅條" style="width:95%">
                         </div>
                         </a>
 
                         <div class="mt-4" style="margin-bottom:50px">
-                            <a href="https://www.yooho.com.tw/goods.php?id=9179">
+                            <a href="https://www.yooho.com.tw/goods.php?id=9179" target="_blank">
                                 <img src="./final_imgs/MB/6F_brownsugarCake.png" alt="黑妞黑糖糕" style="width:95%">
                             </a>
                         </div>
@@ -721,12 +734,12 @@
             </div>
         </div>
 
-        <nav class="container-fluid nav fixed-bottom" style="padding-top:50px; text-align: center;">
+        <nav class="container-fluid nav fixed-bottom" style="padding-top:50px;">
 
             <ul class="d-flex flex-row list-unstyled m-auto ">
 
                 <li class="nav-item " style="margin-bottom: -10px;">
-                    <a class="nav-link mbLink" href="#mbDeparture">
+                    <a class="nav-link mbLink active" href="#mbDeparture">
                         <img src="./final_imgs/MB/0_departure.png?v=000?v=000" alt="departure" style="width:100%;">
                     </a>
                 </li>
@@ -757,9 +770,6 @@
                 </li>
             </ul>
         </nav>
-
-        <!-- <div class="container-fluid"><img src="./final_imgs/MB/0_road.png?v=000" alt=""
-                style="width:100%; height:40px; z-index:3; position:fixed; bottom:0"></div> -->
 
         <div class="container-fluid mbRoad">
             <img src="./final_imgs/MB/0_road.png?v=000" alt="road" style="width:100%; height:40px; z-index:3; position:fixed; bottom:0">
@@ -792,8 +802,24 @@
 <script>
 
     $(document).ready(function () {
+        function setHeightBasedOnWindow(){
+            let windowHeight= $(window).height();
+            $('.slider').css('height', deviceHeight* 0.7 +'px');
+            $('.navbar').css('height', deviceHeight* 0.25 + 'px');
+        }
+
         function initScrollSpy() {
-            let isDesktop = $(window).width() >= 768; 
+            let deviceWidth=$(window).width(); 
+            let deviceHeight=$(window).height(); 
+
+            let isDesktop = deviceWidth >= 768; 
+
+            let deviceWH_ratio= deviceWidth/deviceHeight;
+            if(deviceWH_ratio>2.1){
+                slidesToShow=1.3;
+            }else{
+                slidesToShow=1;
+            }
 
             if (isDesktop) {
                 $('.slider').slick({
@@ -801,11 +827,14 @@
                     dots: false,
                     infinite: false,
                     initialSlide: 0,
-                    speed: 500,
-                    slidesToShow: 1,
+                    speed: 1000,
+                    slidesToShow: slidesToShow,
                     slidesToScroll: 1,
-                    adaptiveHeight: true,
-                    arrows: false,
+                    adaptiveHeight: false,
+
+                    prevArrow: '<div class="slick-prev" style= ><img src="./final_imgs/PC/0_left.png" alt="prevP" style="width:70%; "></div>',
+                    nextArrow: '<div class="slick-next" style= ><img src="./final_imgs/PC/0_right.png" alt="nextP" style="width:70%;"></div>'
+
                 });
 
                 $('.slider').on('afterChange', function (event, slick, currentSlide) {
@@ -828,15 +857,6 @@
                         $('.slider').slick('slickPrev');
                     }
 
-                    $('#prev').click(function () {
-                        $('.slider').slick('slickPrev');
-                    })
-
-
-
-                    $('#next').click(function () {
-                        $('.slider').slick('slickNext');
-                    })
 
                 });
             } else {
@@ -858,10 +878,12 @@
         }
 
         initScrollSpy(); // Initiate Scrollspy @ pageStart
+        setHeightBasedOnWindow();
 
         // Initiate Scrollspy when resize
         $(window).resize(function () {
             initScrollSpy();
+            setHeightBasedOnWindow();
         });
     });
 </script>
