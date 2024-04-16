@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="食光旅行團 「感受產地真食溫度」是我們的初心｜悠活農村" >
     <meta property="og:url" content="https://www.yooho.com.tw/activity.php?act=vegetarian_diet">
-    <meta property="og:image" content="https://www.yooho.com.tw/themes/lativ/activity/images/vegetarian_diet/637x637.jpg" />
+    <meta property="og:image" content="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/foodtour637x637.jpg" />
     <meta property="og:description" content="我們尋覓台灣各地的友善生產者，靠近陽光明媚的農田，感受著清新的雨水滋潤，踏入溫暖潮濕的泥土，細細品味著那生生不息的農作物。我們從這些生產者手中，帶著他們用心栽培的佳作回來，同時將最重要的生產過程呈現給大家，讓那模糊的產地輪廓重新清晰起來，被理解、被珍惜。">
     
 
@@ -133,10 +133,11 @@
 
 
         .navbar {
+            position: fixed;
+            
             top:75%;
             width: 100%;
             height: 25%;
-            position: fixed;
             justify-content: around;
         }
 
@@ -170,9 +171,9 @@
         .mbLink.active::after {
             content: "";
             position:absolute;
-            transform: translateX(25%);
+            transform: translateX(60px);
             top: 70px;
-            /* left:0; */
+            left:0;
             width: 100%;
             height: 50px;
             background-image: url('https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bus.png?v=shadow');
@@ -498,7 +499,7 @@
     <div class="d-md-none text-dark"
         style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bg.png); background-repeat: repeat;">
 
-        <div class="container-fluid pt-5 pb-5 active" id="mbDeparture" style="margin-bottom:200px;">
+        <div class="container-fluid pt-5 pb-5" id="mbDeparture" style="margin-bottom:200px;">
             <div class="row" style="height:100px"></div>
             <div class="row px-4" style="height:80%">
                 <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/1departure.png?v=000" alt="起點" style="width: 100%;" ;>
@@ -737,34 +738,34 @@
 
             <ul class="d-flex flex-row list-unstyled m-auto ">
 
-                <li class="nav-item " style="margin-bottom: -10px;">
+                <li class="nav-item " >
                     <a class="nav-link mbLink active" href="#mbDeparture">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_departure.png?v=000?v=000" alt="departure" style="width:100%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_departure.png?v=000?v=000" alt="departure" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
-                <li class="nav-item " style="margin-bottom: -10px;">
+                <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbNorthern">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_nothern.png?v=000" alt="northern" style="width:100%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_nothern.png?v=000" alt="northern" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
-                <li class="nav-item " style="margin-bottom: -10px;">
+                <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbCentral">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_central.png?v=000" alt="central" style="width:100%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_central.png?v=000" alt="central" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
-                <li class="nav-item " style="margin-bottom: -10px;">
+                <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbSouthern">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_southern.png?v=000" alt="southern" style="width:100%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_southern.png?v=000" alt="southern" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
-                <li class="nav-item " style="margin-bottom: -10px;">
+                <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbEastern">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_eastern.png?v=000" alt="eastern" style="width:100%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_eastern.png?v=000" alt="eastern" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
-                <li class="nav-item " style="margin-bottom: -10px;">
+                <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbIslands">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_islands.png?v=000" alt="islands" style="width:100%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_islands.png?v=000" alt="islands" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
             </ul>
@@ -801,6 +802,12 @@
 <script>
 
     $(document).ready(function () {
+        function setHeightBasedOnWindow(){
+            let windowHeight= $(window).height();
+            $('.slider').css('height', deviceHeight* 0.7 +'px');
+            $('.navbar').css('height', deviceHeight* 0.25 + 'px');
+        }
+
         function initScrollSpy() {
             let deviceWidth=$(window).width(); 
             let deviceHeight=$(window).height(); 
@@ -871,10 +878,12 @@
         }
 
         initScrollSpy(); // Initiate Scrollspy @ pageStart
+        setHeightBasedOnWindow();
 
         // Initiate Scrollspy when resize
         $(window).resize(function () {
             initScrollSpy();
+            setHeightBasedOnWindow();
         });
     });
 </script>
