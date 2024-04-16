@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="食光旅行團 「感受產地真食溫度」是我們的初心｜悠活農村" >
     <meta property="og:url" content="https://www.yooho.com.tw/activity.php?act=vegetarian_diet">
-    <meta property="og:image" content="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/foodtour637x637.jpg" />
+    <meta property="og:image" content="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/637x637.jpg" />
     <meta property="og:description" content="我們尋覓台灣各地的友善生產者，靠近陽光明媚的農田，感受著清新的雨水滋潤，踏入溫暖潮濕的泥土，細細品味著那生生不息的農作物。我們從這些生產者手中，帶著他們用心栽培的佳作回來，同時將最重要的生產過程呈現給大家，讓那模糊的產地輪廓重新清晰起來，被理解、被珍惜。">
     
 
@@ -88,7 +88,7 @@
 
         html, body  {
             /* overflow-x: hidden; */
-            background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bg.png); 
+            background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_bg.png); 
             background-repeat: repeat;
             /* z-index:-1; */
         }
@@ -156,7 +156,7 @@
             transform: translateX(-45%);
             width: 150%;
             height: 150%;
-            background-image: url('https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_bus.png?v=shadow');
+            background-image: url('https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_bus.png?v=shadow');
             background-size: contain;
             background-repeat: no-repeat;
             z-index: 1;
@@ -176,7 +176,7 @@
             left:0;
             width: 100%;
             height: 50px;
-            background-image: url('https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bus.png?v=shadow');
+            background-image: url('https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_bus.png?v=shadow');
             background-size: contain;
             background-repeat: no-repeat;
             margin-top: 0;
@@ -226,8 +226,8 @@
     <!-- Desktop: Hidden only on sm -->
     <div class="d-none d-md-block container-fluid" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-        <!-- style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_bg.png); background-repeat: repeat;" -->
-        <!-- https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_bg.png -->
+        <!-- style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_bg.png); background-repeat: repeat;" -->
+        <!-- https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_bg.png -->
 
 
         <div class="container-fluid ">
@@ -236,7 +236,7 @@
             <div class="slider mx-auto mt-3 mb-5" style="width:90%; ">
                 <!-- Desktop: departure -->
                 <div class="slider-container" id="departure">
-                    <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/1_departure.png" alt="悠活出發囉" style="width:50%; margin:auto; margin-top: 3%">
+                    <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/1_departure.png" alt="悠活出發囉" style="width:50%; margin:auto; margin-top: 3%">
                 </div>
 
                 <!-- Desktop: northern -->
@@ -244,12 +244,12 @@
                     <div class=" row d-flex slider-row">
                         <div class="col-3">
                             
-                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2A_header.png" alt="北台灣" style="width:100%; margin:auto">
+                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/2A_header.png" alt="北台灣" style="width:100%; margin:auto">
 
                         </div>
                         <div class="col-8">
                             <a href="https://www.yooho.com.tw/activity.php?act=yilan_fish" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2B_fish.png" alt="香魚的故鄉" style="width:100%; margin:auto">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/2B_fish.png" alt="香魚的故鄉" style="width:100%; margin:auto">
                             </a>
                         </div>
                         <div class="col-1"></div>
@@ -257,23 +257,23 @@
                     </div>
 
                     <div class="row" style="margin-top:-35px;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2C_dots.png" alt="dots" style="margin-left:15%; width:77%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/2C_dots.png" alt="dots" style="margin-left:15%; width:77%; ">
                     </div>
 
                     <div class="row d-flex  slider-row" style="margin-top:-30px;">
                         <div class="col-4 ms-5" >
                             <a href="https://www.yooho.com.tw/goods.php?id=8207" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2D_xiluzo.png" alt="黃金蛋酥西魯肉"  style="width:75%; margin-left:20%;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/2D_xiluzo.png" alt="黃金蛋酥西魯肉"  style="width:75%; margin-left:20%;">
                             </a>
                         </div>
                         <div class="col-4 ms-4" style="margin-top:-20px;">
                             <a href="https://www.yooho.com.tw/category.php?id=1592" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2E_vegi.png" alt="復興有機蔬果" style="width:75%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/2E_vegi.png" alt="復興有機蔬果" style="width:75%; ">
                             </a>
                         </div>
                         <div class="col-3 mt-3" style="margin-left:-45px">
                             <a href="https://www.yooho.com.tw/goods.php?id=5208" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/2F_tempura.png" alt="基隆手工小甜不辣" style="width:98%; margin-left:-30px">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/2F_tempura.png" alt="基隆手工小甜不辣" style="width:98%; margin-left:-30px">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -284,39 +284,39 @@
                 <div class="slider-container container-fluid" id="central">
                     <div class=" row slider-row d-flex ">
                         <div class="col-3">
-                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3A_header.png" alt="中台灣" style="width:100%;">
+                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3A_header.png" alt="中台灣" style="width:100%;">
                         </div>
                         <div class="col-4">
                             <a href="https://www.yooho.com.tw/category.php?id=1394" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3B_lamb.png" alt="彰化新鮮羊" style="width:95%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3B_lamb.png" alt="彰化新鮮羊" style="width:95%; ">
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="https://www.yooho.com.tw/category.php?id=1357" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3C_beef.png" alt="雲林安心牛" style="width:90%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3C_beef.png" alt="雲林安心牛" style="width:90%; ">
                             </a>
                         </div>
 
                     </div>
 
                     <div class="row" style="height:5%; margin-top:-43px; margin-left:-50px;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3D_dots.png" alt="dots" style="margin-left:15%; width:76%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3D_dots.png" alt="dots" style="margin-left:15%; width:76%; ">
                     </div>
 
                     <div class="row slider-row d-flex " style="margin-top:-60px;">
                         <div class="col-3 mt-3" >
                             <a href="https://www.yooho.com.tw/category.php?id=1103" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3E_eggs.png" alt="安心放牧雞蛋" style="width:97%; margin-left:120px; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3E_eggs.png" alt="安心放牧雞蛋" style="width:97%; margin-left:120px; ">
                             </a>
                         </div>
                         <div class="col-3 ms-5 me-5" >
                             <a href="https://www.yooho.com.tw/category.php?id=1478" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3F_corntato.png" alt="繽紛玉米地瓜" style="width:112%; margin-left:100px;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3F_corntato.png" alt="繽紛玉米地瓜" style="width:112%; margin-left:100px;">
                             </a>
                         </div>
                         <div class="col-3 mt-5 ms-5">
                             <a href="https://www.yooho.com.tw/goods.php?id=9494" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/3G_beanplate.png" alt="非基改鮮豆包"  style="width:100%;  margin-left:80px;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/3G_beanplate.png" alt="非基改鮮豆包"  style="width:100%;  margin-left:80px;">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -327,24 +327,24 @@
                 <div class="slider-container container-fluid" id="southern">
                     <div class=" row slider-row d-flex">
                         <div class="col-3 ms-3">
-                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4A_header.png" alt="南台灣" style="width:103%;">
+                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4A_header.png" alt="南台灣" style="width:103%;">
                         </div>
                         <div class="col-3 ms-5">
                             <a href="https://www.yooho.com.tw/goods.php?id=9969" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4B_PorkKnuckle.png" alt="萬巒豬腳" style="width:100%; margin-left: 30px">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4B_PorkKnuckle.png" alt="萬巒豬腳" style="width:100%; margin-left: 30px">
                             </a>
                         </div>
                         <div class="col-1"></div>
                         <div class="col-3" >
                             <a href="https://www.yooho.com.tw/goods.php?id=9845" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4C_duckSoup.png" alt="新港鴨肉羹" style="width:100%; margin-left: -20px">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4C_duckSoup.png" alt="新港鴨肉羹" style="width:100%; margin-left: -20px">
                             </a>
                         </div>
 
                     </div>
 
                     <div class="row" style="height:5%; margin-left:-100px; margin-top:-20px;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4D_dots.png" alt="dots" style="margin-left:22%; width:70%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4D_dots.png" alt="dots" style="margin-left:22%; width:70%; ">
                     </div>
 
                     <div class="row slider-row d-flex " style="margin-top:-50px;">
@@ -352,17 +352,17 @@
                         </div>
                         <div class="col-3 mt-4  me-3">
                             <a href="https://www.yooho.com.tw/search.php?keywords=%E6%96%87%E6%98%8C%E9%9B%9E" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4E_AlisanChicken.png" alt="阿里山文昌雞" style="width:115%; margin-top:10px; margin-left:-35px;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4E_AlisanChicken.png" alt="阿里山文昌雞" style="width:115%; margin-top:10px; margin-left:-35px;">
                             </a>
                         </div>
                         <div class="col-3 ms-4">
                             <a href="https://www.yooho.com.tw/category.php?id=1523" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4F_milkfish.png" alt="北門虱目魚" style="width:100%; margin-left:10px;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4F_milkfish.png" alt="北門虱目魚" style="width:100%; margin-left:10px;">
                             </a>
                         </div>
                         <div class="col-3 mt-2 ms-5">
                             <a href="https://www.yooho.com.tw/category.php?id=1483" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/4G_Guava.png" alt="大樹安心芭樂"
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/4G_Guava.png" alt="大樹安心芭樂"
                                     style="width:95%; padding-top:20px">
                             </a>
                         </div>
@@ -374,34 +374,34 @@
                 <div class="slider-container container-fluid" id="eastern">
                     <div class=" row slider-row d-flex">
                         <div class="col-3">
-                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5A_header.png" alt="花東" style="width:100%; margin:auto">
+                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/5A_header.png" alt="花東" style="width:100%; margin:auto">
                         </div>
                         <div class="col-8 ms-5" style="margin-top:-5px;">
                             <a href="https://www.yooho.com.tw/activity.php?act=hakka_rice" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5B_hakka.png" alt="花蓮客家庄" style="width:80%;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/5B_hakka.png" alt="花蓮客家庄" style="width:80%;">
                             </a>
                         </div>
                     </div>
 
                     <div class="row" style="height:5%;  margin-left: 300px; margin-top:-55px;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5C_dots.png" alt="dots" style="width:90%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/5C_dots.png" alt="dots" style="width:90%; ">
                     </div>
 
                     <div class="row slider-row d-flex " style="margin-top:-30px">
                         <div class="col-2"></div>
                         <div class="col-3 mt-2" style="margin-left:-130px">
                             <a href="https://www.yooho.com.tw/goods.php?id=3432" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條" style="width:100%;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條" style="width:100%;">
                             </a>
                         </div>
                         <div class="col-3 ms-5 ">
                             <a href="https://www.yooho.com.tw/goods.php?id=4221" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:95%; margin-top:-10px;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:95%; margin-top:-10px;">
                             </a>
                         </div>
                         <div class="col-3 mt-2 ms-5">
                             <a href="https://www.yooho.com.tw/goods.php?id=7580" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋" style="width:95%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋" style="width:95%; ">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -412,17 +412,17 @@
                 <div class="slider-container container-fluid" id="islands">
                     <div class=" row slider-row d-flex">
                         <div class="col-3">
-                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6A_header.png" alt="離島" style="width:100%; margin:auto">
+                            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/6A_header.png" alt="離島" style="width:100%; margin:auto">
                         </div>
                         <div class="col-8 ms-5">
                             <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6B_penghu.png" alt="澎湖跨海漁市" style="width:90%;">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/6B_penghu.png" alt="澎湖跨海漁市" style="width:90%;">
                             </a>
                         </div>
                     </div>
 
                     <div class="row" style="margin-left: 200px; margin-top:-70px; ">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6C_dots.png" alt="dots" style=" width:85%; margin-left: 70px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/6C_dots.png" alt="dots" style=" width:85%; margin-left: 70px;">
                     </div>
 
                     <div class="row slider-row d-flex " style="margin-top:-20px;">
@@ -430,17 +430,17 @@
                         </div>
                         <div class="col-3 mt-2" style="margin-left:-70px; ">
                             <a href="https://www.yooho.com.tw/category.php?id=1506" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6D_Myopsina.png" alt="極鮮小卷" style="width:90%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/6D_Myopsina.png" alt="極鮮小卷" style="width:90%; ">
                             </a>
                         </div>
                         <div class="col-3 ms-3 mt-1 ">
                             <a href="https://www.yooho.com.tw/category.php?id=1379" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6E_RedCoralTrout.png" alt="極品紅條" style="width:90%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/6E_RedCoralTrout.png" alt="極品紅條" style="width:90%; ">
                             </a>
                         </div>
                         <div class="col-3  ms-3 mt-4 ">
                             <a href="https://www.yooho.com.tw/goods.php?id=9179" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/6F_brownsugarCake.png" alt="黑妞黑糖糕" style="width:100%; ">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/6F_brownsugarCake.png" alt="黑妞黑糖糕" style="width:100%; ">
                             </a>
                         </div>
                         <!-- <div class="col-1"></div> -->
@@ -452,40 +452,40 @@
 
         </div>
 
-        <div class="container-fluid road" style=" position:fixed; bottom: 0; background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_road.png); background-repeat:no-repeat; background-position: bottom; margin-top:6%; z-index:-1; margin-bottom:0; text-align: center; ">
+        <div class="container-fluid road" style=" position:fixed; bottom: 0; background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_road.png); background-repeat:no-repeat; background-position: bottom; margin-top:6%; z-index:-1; margin-bottom:0; text-align: center; ">
         </div>
         <nav class="row navbar navbar-expand-lg ms-5" style="width:95%;"  >
             <ul class="navbar-nav container-fluid" style="margin-top:-3%; ">
 
                 <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#departure" >
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_departure.png" alt="northern" style="width:100%; margin:auto">
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_departure.png" alt="northern" style="width:100%; margin:auto">
                         </p>
                     </a>
                 </li>
                 <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#northern">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_nothern.png" alt="northern" style="width:100%; margin:auto"></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_nothern.png" alt="northern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
                 <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#central">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_central.png" alt="central" style="width:100%; margin:auto"></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_central.png" alt="central" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
                 <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#southern">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_southern.png" alt="southern" style="width:100%; margin:auto"></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_southern.png" alt="southern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
                 <li class="nav-item col-2 px-5" >
                     <a class="nav-link pcLink" href="#eastern">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_eastern.png" alt="eastern" style="width:100%; margin:auto"></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_eastern.png" alt="eastern" style="width:100%; margin:auto"></p>
                     </a>
                 </li>
                 <li class="nav-item col-2 px-5 " >
                     <a class="nav-link pcLink" href="#islands">
-                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_islands.png" alt="islands" style="width:100%;margin:auto;"></p>
+                        <p><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_islands.png" alt="islands" style="width:100%;margin:auto;"></p>
                     </a>
                 </li>
             </ul>
@@ -497,12 +497,12 @@
 
     <!-- Mobile: Hidden only on md-->
     <div class="d-md-none text-dark"
-        style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_bg.png); background-repeat: repeat;">
+        style="background-image: url(https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_bg.png); background-repeat: repeat;">
 
         <div class="container-fluid pt-5 pb-5" id="mbDeparture" style="margin-bottom:200px;">
             <div class="row" style="height:100px"></div>
             <div class="row px-4" style="height:80%">
-                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/1departure.png?v=000" alt="起點" style="width: 100%;" ;>
+                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/1departure.png?v=000" alt="起點" style="width: 100%;" ;>
             </div>
             <div class="row" style="height:100px"></div>
         </div>
@@ -512,34 +512,34 @@
             <div class="container-fluid ">
                 <div class="row">
                     <div class="col-12" style="text-align: center;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/2A_header.png" alt="" style="width:60%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/2A_header.png" alt="" style="width:60%; ">
                     </div>
                 </div>
                 <div class="row d-flex flex-row">
                     <div class="col-1"></div>
                     <div class="col-2" style="margin-top:-5%">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/2B_dots.png" alt="" style="width:119%; text-align:right">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/2B_dots.png" alt="" style="width:119%; text-align:right">
                     </div>
                     <div class="col-9 " style="margin-left:-10%; margin-top: 5%; ">
                         <div class="mt-0 mb-0">
                             <a href="https://www.yooho.com.tw/activity.php?act=yilan_fish" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/2C_fish.png" alt="香魚的故鄉" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/2C_fish.png" alt="香魚的故鄉" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3 mb-0">
                             <a href="https://www.yooho.com.tw/category.php?id=1592" target="_blank" >
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/2D_vegi.png" alt="復興有機蔬果" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/2D_vegi.png" alt="復興有機蔬果" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
                             <a href="https://www.yooho.com.tw/goods.php?id=8207" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/2E_xiluzo.png" alt="黃金蛋酥西魯肉" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/2E_xiluzo.png" alt="黃金蛋酥西魯肉" style="width:100%">
                         </div>
                         </a>
 
                         <div class="mt-3" style="margin-bottom:100px">
                             <a href="https://www.yooho.com.tw/goods.php?id=5208" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/2F_tempura.png" alt="基隆手工小甜不辣" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/2F_tempura.png" alt="基隆手工小甜不辣" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -556,40 +556,40 @@
             <div class="container-fluid ">
                 <div class="row">
                     <div class="col-12" style="text-align: center;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3A_header.png" alt="中台灣" style="width:60%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3A_header.png" alt="中台灣" style="width:60%; ">
                     </div>
                 </div>
                 <div class="row d-flex flex-row">
                     <div class="col-1"></div>
                     <div class="col-2" style="margin-top: -20px; margin-left:-25px" >
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3B_dots.png" alt="dots" style="width:160%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3B_dots.png" alt="dots" style="width:160%;">
                     </div>
                     <div class="col-9 " >
                         <div class="mt-3 mb-0" >
                             <a href="https://www.yooho.com.tw/category.php?id=1394" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3C_lamb.png" alt="彰化新鮮羊" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3C_lamb.png" alt="彰化新鮮羊" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3 mb-0">
                             <a href="https://www.yooho.com.tw/category.php?id=1357" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3D_beef.png" alt="雲林安心牛" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3D_beef.png" alt="雲林安心牛" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
                             <a href="https://www.yooho.com.tw/category.php?id=1103" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3E_eggs.png" alt="安心放牧雞蛋" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3E_eggs.png" alt="安心放牧雞蛋" style="width:100%">
                             </a>
                         </div>
 
 
                         <div class="mt-4" >
                             <a href="https://www.yooho.com.tw/category.php?id=1478" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3F_corntato.png" alt="繽紛玉米地瓜" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3F_corntato.png" alt="繽紛玉米地瓜" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-4" style="margin-bottom:100px">
                             <a href="https://www.yooho.com.tw/goods.php?id=9494" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/3G_beanpaste.png" alt="非基改鮮豆包" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/3G_beanpaste.png" alt="非基改鮮豆包" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -602,40 +602,40 @@
             <div class="container-fluid ">
                 <div class="row">
                     <div class="col-12" style="text-align: center;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4A_header.png" alt="南台灣" style="width:60%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4A_header.png" alt="南台灣" style="width:60%; ">
                     </div>
                 </div>
                 <div class="row d-flex flex-row">
                     <div class="col-1"></div>
                     <div class="col-2" style="margin-top:-10px; margin-left:-10px;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4B_dots.png" alt="dots" style="width:148%; text-align:left">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4B_dots.png" alt="dots" style="width:148%; text-align:left">
                     </div>
                     <div class="col-9 " style="margin-left:-5%; ">
                         <div class="mt-0" >
                             <a href="https://www.yooho.com.tw/goods.php?id=9969" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4C_PorkKnuckle.png" alt="萬巒豬腳" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4C_PorkKnuckle.png" alt="萬巒豬腳" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
                             <a href="https://www.yooho.com.tw/goods.php?id=9845" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4D_duckSoup.png" alt="新港鴨肉羹" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4D_duckSoup.png" alt="新港鴨肉羹" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3 ">
                             <a href="https://www.yooho.com.tw/search.php?keywords=%E6%96%87%E6%98%8C%E9%9B%9E" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4E_AlisanChicken.png" alt="阿里山文昌雞" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4E_AlisanChicken.png" alt="阿里山文昌雞" style="width:100%">
                         </div>
                         </a>
 
                         <div class="mt-3 " >
                             <a href="https://www.yooho.com.tw/category.php?id=1523" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4F_milkfish.png" alt="北門虱目魚" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4F_milkfish.png" alt="北門虱目魚" style="width:100%">
                             </a>
                         </div>
 
                         <div class="mt-3 " style="margin-bottom:150px">
                             <a href="https://www.yooho.com.tw/category.php?id=1483" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/4G_Guava.png" alt="大樹安心芭樂" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/4G_Guava.png" alt="大樹安心芭樂" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -652,34 +652,34 @@
             <div class="container-fluid ">
                 <div class="row">
                     <div class="col-12" style="text-align: center;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/5A_header.png" alt="花東" style="width:60%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/5A_header.png" alt="花東" style="width:60%; ">
                     </div>
                 </div>
                 <div class="row d-flex flex-row">
                     <div class="col-1"></div>
                     <div class="col-2" style="margin-left:-20px; margin-top:-13px;" >
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/5B_dots.png" alt="dots" style="width:152%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/5B_dots.png" alt="dots" style="width:152%;">
                     </div>
                     <div class="col-9 " >
                         <div class="mt-4 mb-0" style="margin-left:-5%">
                             <a href="https://www.yooho.com.tw/activity.php?act=hakka_rice" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/5C_hakka.png" alt="花蓮客家庄" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/5C_hakka.png" alt="花蓮客家庄" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
                             <a href="https://www.yooho.com.tw/goods.php?id=3432" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/5D_canedriedpork.png" alt="甘蔗煙燻臘肉條" style="width:100%">
                             </a>
                         </div>
                         <div class="mt-3">
                             <a href="https://www.yooho.com.tw/goods.php?id=4221" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/5E_lemonpaperSausage.png" alt="檸香馬告香腸" style="width:100%">
                         </div>
                         </a>
 
                         <div class="mt-4" style="margin-bottom:100px">
                             <a href="https://www.yooho.com.tw/goods.php?id=7580" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋" style="width:100%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/5F_teaflowerIcecream.png" alt="柚花金萱冰淇淋" style="width:100%">
                             </a>
                         </div>
 
@@ -694,34 +694,34 @@
             <div class="container-fluid ">
                 <div class="row">
                     <div class="col-12" style="text-align: center;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/6A_header.png" alt="離島" style="width:60%; ">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/6A_header.png" alt="離島" style="width:60%; ">
                     </div>
                 </div>
                 <div class="row d-flex flex-row">
                     <div class="col-1"></div>
                     <div class="col-2" style="margin-top:-15px; margin-left:-10px; text-align: left;">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/6B_dots.png" alt="dots" style="width:135%;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/6B_dots.png" alt="dots" style="width:135%;">
                     </div>
                     <div class="col-9 " >
                         <div class="mt-4" style="margin-left:-5%">
                             <a href="https://www.yooho.com.tw/activity.php?act=penghu_202207" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/6C_penghu.png" alt="澎湖跨海漁市" style="width:95%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/6C_penghu.png" alt="澎湖跨海漁市" style="width:95%">
                             </a>
                         </div>
                         <div class="mt-3">
                             <a href="https://www.yooho.com.tw/category.php?id=1506" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/6D_Myopsina.png" alt="極鮮小卷" style="width:95%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/6D_Myopsina.png" alt="極鮮小卷" style="width:95%">
                             </a>
                         </div>
                         <div class="mt-4">
                             <a href="https://www.yooho.com.tw/category.php?id=1379" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/6E_RedCoralTrout.png" alt="極品紅條" style="width:95%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/6E_RedCoralTrout.png" alt="極品紅條" style="width:95%">
                         </div>
                         </a>
 
                         <div class="mt-4" style="margin-bottom:50px">
                             <a href="https://www.yooho.com.tw/goods.php?id=9179" target="_blank">
-                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/6F_brownsugarCake.png" alt="黑妞黑糖糕" style="width:95%">
+                                <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/6F_brownsugarCake.png" alt="黑妞黑糖糕" style="width:95%">
                             </a>
                         </div>
 
@@ -740,39 +740,39 @@
 
                 <li class="nav-item " >
                     <a class="nav-link mbLink active" href="#mbDeparture">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_departure.png?v=000?v=000" alt="departure" style="width:100%; margin-bottom:-10px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_departure.png?v=000?v=000" alt="departure" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
                 <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbNorthern">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_nothern.png?v=000" alt="northern" style="width:100%; margin-bottom:-10px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_nothern.png?v=000" alt="northern" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
                 <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbCentral">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_central.png?v=000" alt="central" style="width:100%; margin-bottom:-10px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_central.png?v=000" alt="central" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
                 <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbSouthern">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_southern.png?v=000" alt="southern" style="width:100%; margin-bottom:-10px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_southern.png?v=000" alt="southern" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
                 <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbEastern">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_eastern.png?v=000" alt="eastern" style="width:100%; margin-bottom:-10px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_eastern.png?v=000" alt="eastern" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
                 <li class="nav-item " >
                     <a class="nav-link mbLink" href="#mbIslands">
-                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_islands.png?v=000" alt="islands" style="width:100%; margin-bottom:-10px;">
+                        <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_islands.png?v=000" alt="islands" style="width:100%; margin-bottom:-10px;">
                     </a>
                 </li>
             </ul>
         </nav>
 
         <div class="container-fluid mbRoad">
-            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/MB/0_road.png?v=000" alt="road" style="width:100%; height:40px; z-index:3; position:fixed; bottom:0">
+            <img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/mb/0_road.png?v=000" alt="road" style="width:100%; height:40px; z-index:3; position:fixed; bottom:0">
         </div>
 
     </div>
@@ -832,8 +832,8 @@
                     slidesToScroll: 1,
                     adaptiveHeight: false,
 
-                    prevArrow: '<div class="slick-prev" style= ><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_left.png" alt="prevP" style="width:70%; "></div>',
-                    nextArrow: '<div class="slick-next" style= ><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/PC/0_right.png" alt="nextP" style="width:70%;"></div>'
+                    prevArrow: '<div class="slick-prev" style= ><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_left.png" alt="prevP" style="width:70%; "></div>',
+                    nextArrow: '<div class="slick-next" style= ><img src="https://designer.yooho.com.tw/themes/lativ/activity/images/foodtour/pc/0_right.png" alt="nextP" style="width:70%;"></div>'
 
                 });
 
